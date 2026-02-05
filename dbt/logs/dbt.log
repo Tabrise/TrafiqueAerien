@@ -2954,3 +2954,2387 @@ alter table "analytics"."main"."mart_flight_features__dbt_tmp" rename to "mart_f
 [0m00:20:23.725866 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000182AFEF4FE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000182AF8F57F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000182AF8F66C0>]}
 [0m00:20:23.726840 [debug] [MainThread]: Flushing usage events
 [0m00:20:24.164349 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:27:32.974127 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C5EC472D20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C5EC473230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C5EA5B3020>]}
+
+
+============================== 15:27:32.990154 | 9ed3d235-634a-422a-8fa0-a201f240fa2f ==============================
+[0m15:27:32.990154 [info ] [MainThread]: Running with dbt=1.11.2
+[0m15:27:32.991156 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'H:\\Bureau\\Pro\\Ecole\\Open Data\\dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'H:\\Bureau\\Pro\\Ecole\\Open Data\\dbt\\logs'}
+[0m15:27:33.597328 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9ed3d235-634a-422a-8fa0-a201f240fa2f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C5EDECBA40>]}
+[0m15:27:33.692685 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9ed3d235-634a-422a-8fa0-a201f240fa2f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C5EDF97E00>]}
+[0m15:27:33.700200 [info ] [MainThread]: Registered adapter: duckdb=1.8.3
+[0m15:27:34.226455 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m15:27:34.464582 [debug] [MainThread]: Partial parsing enabled: 8 files deleted, 1 files added, 10 files changed.
+[0m15:27:34.465584 [debug] [MainThread]: Partial parsing: added file: dbt_duckdb://macros\incremental_helper.sql
+[0m15:27:34.465584 [debug] [MainThread]: Partial parsing: deleted file: dbt_duckdb://macros\utils\generate_series.sql
+[0m15:27:34.466585 [debug] [MainThread]: Partial parsing: deleted file: dbt_duckdb://macros\materializations\table_function.sql
+[0m15:27:34.467581 [debug] [MainThread]: Partial parsing: deleted file: dbt_duckdb://macros\materializations\incremental_strategy\merge_defaults.sql
+[0m15:27:34.467581 [debug] [MainThread]: Partial parsing: deleted file: dbt_duckdb://macros\materializations\hooks.sql
+[0m15:27:34.468581 [debug] [MainThread]: Partial parsing: deleted file: dbt_duckdb://macros\materializations\incremental_strategy\merge.sql
+[0m15:27:34.468581 [debug] [MainThread]: Partial parsing: deleted file: dbt_duckdb://macros\materializations\incremental_strategy\validation_helper.sql
+[0m15:27:34.469580 [debug] [MainThread]: Partial parsing: deleted file: dbt_duckdb://macros\materializations\incremental_strategy\delete_insert.sql
+[0m15:27:34.470579 [debug] [MainThread]: Partial parsing: deleted file: dbt_duckdb://macros\materializations\incremental_strategy\merge_config_validation.sql
+[0m15:27:34.470579 [debug] [MainThread]: Partial parsing: updated file: dbt_duckdb://macros\columns.sql
+[0m15:27:34.472085 [debug] [MainThread]: Partial parsing: updated file: dbt_duckdb://macros\materializations\external.sql
+[0m15:27:34.472085 [debug] [MainThread]: Partial parsing: updated file: dbt_duckdb://macros\materializations\table.sql
+[0m15:27:34.473093 [debug] [MainThread]: Partial parsing: updated file: dbt_duckdb://macros\adapters.sql
+[0m15:27:34.474093 [debug] [MainThread]: Partial parsing: updated file: dbt_duckdb://macros\utils\upstream.sql
+[0m15:27:34.475093 [debug] [MainThread]: Partial parsing: updated file: dbt_duckdb://macros\utils\datediff.sql
+[0m15:27:34.476091 [debug] [MainThread]: Partial parsing: updated file: dbt_duckdb://macros\snapshot_helper.sql
+[0m15:27:34.476091 [debug] [MainThread]: Partial parsing: updated file: dbt_duckdb://macros\materializations\incremental.sql
+[0m15:27:34.477091 [debug] [MainThread]: Partial parsing: updated file: dbt_duckdb://macros\catalog.sql
+[0m15:27:34.478092 [debug] [MainThread]: Partial parsing: updated file: dbt_duckdb://macros\utils\dateadd.sql
+[0m15:27:34.980332 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9ed3d235-634a-422a-8fa0-a201f240fa2f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C5EE29F530>]}
+[0m15:27:35.099250 [debug] [MainThread]: Wrote artifact WritableManifest to H:\Bureau\Pro\Ecole\Open Data\dbt\target\manifest.json
+[0m15:27:35.103319 [debug] [MainThread]: Wrote artifact SemanticManifest to H:\Bureau\Pro\Ecole\Open Data\dbt\target\semantic_manifest.json
+[0m15:27:35.232152 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9ed3d235-634a-422a-8fa0-a201f240fa2f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C5EE58C4A0>]}
+[0m15:27:35.233273 [info ] [MainThread]: Found 7 models, 1 seed, 5 data tests, 455 macros
+[0m15:27:35.234272 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9ed3d235-634a-422a-8fa0-a201f240fa2f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C5EE6F8830>]}
+[0m15:27:35.237270 [info ] [MainThread]: 
+[0m15:27:35.238270 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:27:35.239271 [info ] [MainThread]: 
+[0m15:27:35.240270 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m15:27:35.248332 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_analytics'
+[0m15:27:35.423683 [debug] [ThreadPool]: Using duckdb connection "list_analytics"
+[0m15:27:35.424687 [debug] [ThreadPool]: On list_analytics: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "connection_name": "list_analytics"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where catalog_name = '"analytics"'
+    
+  
+  
+[0m15:27:35.424687 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:27:35.456483 [debug] [ThreadPool]: SQL status: OK in 0.031 seconds
+[0m15:27:35.458490 [debug] [ThreadPool]: On list_analytics: Close
+[0m15:27:35.467083 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_analytics, now create_analytics_main)
+[0m15:27:35.468081 [debug] [ThreadPool]: Creating schema "database: "analytics"
+schema: "main"
+"
+[0m15:27:35.477115 [debug] [ThreadPool]: Using duckdb connection "create_analytics_main"
+[0m15:27:35.478114 [debug] [ThreadPool]: On create_analytics_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "connection_name": "create_analytics_main"} */
+
+    
+        select type from duckdb_databases()
+        where database_name='analytics'
+        and type='sqlite'
+    
+  
+[0m15:27:35.479114 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:27:35.489328 [debug] [ThreadPool]: SQL status: OK in 0.010 seconds
+[0m15:27:35.490329 [debug] [ThreadPool]: Using duckdb connection "create_analytics_main"
+[0m15:27:35.491327 [debug] [ThreadPool]: On create_analytics_main: BEGIN
+[0m15:27:35.492328 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:27:35.492328 [debug] [ThreadPool]: Using duckdb connection "create_analytics_main"
+[0m15:27:35.493412 [debug] [ThreadPool]: On create_analytics_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "connection_name": "create_analytics_main"} */
+
+    
+    
+        create schema if not exists "analytics"."main"
+    
+[0m15:27:35.495412 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m15:27:35.496409 [debug] [ThreadPool]: On create_analytics_main: COMMIT
+[0m15:27:35.497410 [debug] [ThreadPool]: Using duckdb connection "create_analytics_main"
+[0m15:27:35.497410 [debug] [ThreadPool]: On create_analytics_main: COMMIT
+[0m15:27:35.498409 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:27:35.499409 [debug] [ThreadPool]: On create_analytics_main: Close
+[0m15:27:35.504650 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_analytics_main'
+[0m15:27:35.512179 [debug] [ThreadPool]: Using duckdb connection "list_analytics_main"
+[0m15:27:35.512179 [debug] [ThreadPool]: On list_analytics_main: BEGIN
+[0m15:27:35.513187 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:27:35.522188 [debug] [ThreadPool]: SQL status: OK in 0.009 seconds
+[0m15:27:35.523517 [debug] [ThreadPool]: Using duckdb connection "list_analytics_main"
+[0m15:27:35.524514 [debug] [ThreadPool]: On list_analytics_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "connection_name": "list_analytics_main"} */
+select
+      'analytics' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'main'
+    and table_catalog = 'analytics'
+  
+[0m15:27:35.567130 [debug] [ThreadPool]: SQL status: OK in 0.042 seconds
+[0m15:27:35.576164 [debug] [ThreadPool]: On list_analytics_main: ROLLBACK
+[0m15:27:35.579163 [debug] [ThreadPool]: Failed to rollback 'list_analytics_main'
+[0m15:27:35.580164 [debug] [ThreadPool]: On list_analytics_main: Close
+[0m15:27:35.584676 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9ed3d235-634a-422a-8fa0-a201f240fa2f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C5E9BF4D40>]}
+[0m15:27:35.586181 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:27:35.587186 [debug] [MainThread]: On master: BEGIN
+[0m15:27:35.587186 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:27:35.597259 [debug] [MainThread]: SQL status: OK in 0.009 seconds
+[0m15:27:35.598258 [debug] [MainThread]: On master: COMMIT
+[0m15:27:35.598258 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:27:35.599257 [debug] [MainThread]: On master: COMMIT
+[0m15:27:35.600257 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m15:27:35.600257 [debug] [MainThread]: On master: Close
+[0m15:27:35.615356 [debug] [Thread-1 (]: Began running node model.open_data_air_traffic.stg_airports
+[0m15:27:35.615356 [debug] [Thread-2 (]: Began running node model.open_data_air_traffic.stg_opensky_flights
+[0m15:27:35.616361 [debug] [Thread-3 (]: Began running node model.open_data_air_traffic.stg_weather_hourly
+[0m15:27:35.617360 [info ] [Thread-1 (]: 1 of 7 START sql view model main.stg_airports .................................. [RUN]
+[0m15:27:35.617360 [info ] [Thread-2 (]: 2 of 7 START sql view model main.stg_opensky_flights ........................... [RUN]
+[0m15:27:35.618362 [info ] [Thread-3 (]: 3 of 7 START sql view model main.stg_weather_hourly ............................ [RUN]
+[0m15:27:35.620364 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.open_data_air_traffic.stg_airports'
+[0m15:27:35.621362 [debug] [Thread-2 (]: Acquiring new duckdb connection 'model.open_data_air_traffic.stg_opensky_flights'
+[0m15:27:35.621362 [debug] [Thread-3 (]: Acquiring new duckdb connection 'model.open_data_air_traffic.stg_weather_hourly'
+[0m15:27:35.622362 [debug] [Thread-1 (]: Began compiling node model.open_data_air_traffic.stg_airports
+[0m15:27:35.623392 [debug] [Thread-2 (]: Began compiling node model.open_data_air_traffic.stg_opensky_flights
+[0m15:27:35.623392 [debug] [Thread-3 (]: Began compiling node model.open_data_air_traffic.stg_weather_hourly
+[0m15:27:35.632401 [debug] [Thread-1 (]: Writing injected SQL for node "model.open_data_air_traffic.stg_airports"
+[0m15:27:35.637120 [debug] [Thread-2 (]: Writing injected SQL for node "model.open_data_air_traffic.stg_opensky_flights"
+[0m15:27:35.641121 [debug] [Thread-3 (]: Writing injected SQL for node "model.open_data_air_traffic.stg_weather_hourly"
+[0m15:27:35.647316 [debug] [Thread-2 (]: Began executing node model.open_data_air_traffic.stg_opensky_flights
+[0m15:27:35.648315 [debug] [Thread-3 (]: Began executing node model.open_data_air_traffic.stg_weather_hourly
+[0m15:27:35.649312 [debug] [Thread-1 (]: Began executing node model.open_data_air_traffic.stg_airports
+[0m15:27:35.752146 [debug] [Thread-2 (]: Writing runtime sql for node "model.open_data_air_traffic.stg_opensky_flights"
+[0m15:27:35.757435 [debug] [Thread-3 (]: Writing runtime sql for node "model.open_data_air_traffic.stg_weather_hourly"
+[0m15:27:35.761432 [debug] [Thread-1 (]: Writing runtime sql for node "model.open_data_air_traffic.stg_airports"
+[0m15:27:35.765457 [debug] [Thread-2 (]: Using duckdb connection "model.open_data_air_traffic.stg_opensky_flights"
+[0m15:27:35.765457 [debug] [Thread-3 (]: Using duckdb connection "model.open_data_air_traffic.stg_weather_hourly"
+[0m15:27:35.766457 [debug] [Thread-1 (]: Using duckdb connection "model.open_data_air_traffic.stg_airports"
+[0m15:27:35.766457 [debug] [Thread-2 (]: On model.open_data_air_traffic.stg_opensky_flights: BEGIN
+[0m15:27:35.767456 [debug] [Thread-3 (]: On model.open_data_air_traffic.stg_weather_hourly: BEGIN
+[0m15:27:35.768456 [debug] [Thread-1 (]: On model.open_data_air_traffic.stg_airports: BEGIN
+[0m15:27:35.769456 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m15:27:35.769456 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m15:27:35.770456 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:27:35.779462 [debug] [Thread-2 (]: SQL status: OK in 0.010 seconds
+[0m15:27:35.780462 [debug] [Thread-3 (]: SQL status: OK in 0.010 seconds
+[0m15:27:35.781464 [debug] [Thread-1 (]: SQL status: OK in 0.011 seconds
+[0m15:27:35.782463 [debug] [Thread-2 (]: Using duckdb connection "model.open_data_air_traffic.stg_opensky_flights"
+[0m15:27:35.782970 [debug] [Thread-3 (]: Using duckdb connection "model.open_data_air_traffic.stg_weather_hourly"
+[0m15:27:35.783979 [debug] [Thread-1 (]: Using duckdb connection "model.open_data_air_traffic.stg_airports"
+[0m15:27:35.784981 [debug] [Thread-2 (]: On model.open_data_air_traffic.stg_opensky_flights: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_opensky_flights"} */
+
+  
+  create view "analytics"."main"."stg_opensky_flights__dbt_tmp" as (
+    with raw as (
+    select *
+    from read_json_auto(
+        '../data/raw/opensky/*/*.jsonl',
+        union_by_name=true
+    )
+)
+
+select
+    icao24,
+    trim(callsign) as callsign,
+    estDepartureAirport as est_departure_airport,
+    estArrivalAirport as est_arrival_airport,
+    firstSeen as first_seen,
+    lastSeen as last_seen,
+    estDepartureAirportHorizDistance as est_departure_airport_horiz_distance,
+    estDepartureAirportVertDistance as est_departure_airport_vert_distance,
+    estArrivalAirportHorizDistance as est_arrival_airport_horiz_distance,
+    estArrivalAirportVertDistance as est_arrival_airport_vert_distance,
+    departureAirportCandidatesCount as departure_airport_candidates_count,
+    arrivalAirportCandidatesCount as arrival_airport_candidates_count,
+    flight_type,
+    airport_icao,
+    to_timestamp(firstSeen) as first_seen_ts_utc,
+    to_timestamp(lastSeen) as last_seen_ts_utc,
+    date_trunc('hour', to_timestamp(firstSeen)) as first_seen_hour_utc,
+    date_trunc('hour', to_timestamp(lastSeen)) as last_seen_hour_utc
+from raw
+  );
+
+[0m15:27:35.784981 [debug] [Thread-3 (]: On model.open_data_air_traffic.stg_weather_hourly: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_weather_hourly"} */
+
+  
+  create view "analytics"."main"."stg_weather_hourly__dbt_tmp" as (
+    with raw as (
+    select *
+    from read_json_auto(
+        '../data/raw/weather/*/*.json',
+        union_by_name=true
+    )
+),
+expanded as (
+    select
+        airport_icao,
+        timezone,
+        hourly.time as time_list,
+        hourly.temperature_2m as temperature_2m_list,
+        hourly.precipitation as precipitation_list,
+        hourly.wind_speed_10m as wind_speed_10m_list,
+        hourly.cloud_cover as cloud_cover_list
+    from raw
+)
+
+select
+    airport_icao,
+    coalesce(timezone, 'UTC') as timezone,
+    list_extract(time_list, i) as time_local,
+    strptime(list_extract(time_list, i), '%Y-%m-%dT%H:%M') as time_utc,
+    list_extract(temperature_2m_list, i) as temperature_2m,
+    list_extract(precipitation_list, i) as precipitation,
+    list_extract(wind_speed_10m_list, i) as wind_speed_10m,
+    list_extract(cloud_cover_list, i) as cloud_cover
+from expanded, range(0, list_count(time_list)) as t(i)
+  );
+
+[0m15:27:35.786487 [debug] [Thread-1 (]: On model.open_data_air_traffic.stg_airports: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_airports"} */
+
+  
+  create view "analytics"."main"."stg_airports__dbt_tmp" as (
+    select
+    upper(icao) as icao,
+    latitude,
+    longitude,
+    coalesce(timezone, 'UTC') as timezone,
+    upper(country_code) as country_code
+from read_csv_auto('../data/reference/airports_eu.csv')
+  );
+
+[0m15:27:35.792003 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m15:27:35.802033 [debug] [Thread-1 (]: Using duckdb connection "model.open_data_air_traffic.stg_airports"
+[0m15:27:35.803039 [debug] [Thread-1 (]: On model.open_data_air_traffic.stg_airports: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_airports"} */
+alter view "analytics"."main"."stg_airports" rename to "stg_airports__dbt_backup"
+[0m15:27:35.805040 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:27:35.809558 [debug] [Thread-1 (]: Using duckdb connection "model.open_data_air_traffic.stg_airports"
+[0m15:27:35.811066 [debug] [Thread-1 (]: On model.open_data_air_traffic.stg_airports: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_airports"} */
+alter view "analytics"."main"."stg_airports__dbt_tmp" rename to "stg_airports"
+[0m15:27:35.812581 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:27:35.840231 [debug] [Thread-1 (]: On model.open_data_air_traffic.stg_airports: COMMIT
+[0m15:27:35.842232 [debug] [Thread-3 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_weather_hourly"} */
+
+  
+  create view "analytics"."main"."stg_weather_hourly__dbt_tmp" as (
+    with raw as (
+    select *
+    from read_json_auto(
+        '../data/raw/weather/*/*.json',
+        union_by_name=true
+    )
+),
+expanded as (
+    select
+        airport_icao,
+        timezone,
+        hourly.time as time_list,
+        hourly.temperature_2m as temperature_2m_list,
+        hourly.precipitation as precipitation_list,
+        hourly.wind_speed_10m as wind_speed_10m_list,
+        hourly.cloud_cover as cloud_cover_list
+    from raw
+)
+
+select
+    airport_icao,
+    coalesce(timezone, 'UTC') as timezone,
+    list_extract(time_list, i) as time_local,
+    strptime(list_extract(time_list, i), '%Y-%m-%dT%H:%M') as time_utc,
+    list_extract(temperature_2m_list, i) as temperature_2m,
+    list_extract(precipitation_list, i) as precipitation,
+    list_extract(wind_speed_10m_list, i) as wind_speed_10m,
+    list_extract(cloud_cover_list, i) as cloud_cover
+from expanded, range(0, list_count(time_list)) as t(i)
+  );
+
+[0m15:27:35.843337 [debug] [Thread-1 (]: Using duckdb connection "model.open_data_air_traffic.stg_airports"
+[0m15:27:35.845337 [debug] [Thread-3 (]: DuckDB adapter: Rolling back transaction.
+[0m15:27:35.846345 [debug] [Thread-1 (]: On model.open_data_air_traffic.stg_airports: COMMIT
+[0m15:27:35.847343 [debug] [Thread-3 (]: On model.open_data_air_traffic.stg_weather_hourly: ROLLBACK
+[0m15:27:35.850344 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m15:27:35.860556 [debug] [Thread-1 (]: Using duckdb connection "model.open_data_air_traffic.stg_airports"
+[0m15:27:35.860556 [debug] [Thread-1 (]: On model.open_data_air_traffic.stg_airports: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_airports"} */
+drop view if exists "analytics"."main"."stg_airports__dbt_backup" cascade
+[0m15:27:35.864070 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:27:35.868585 [debug] [Thread-1 (]: On model.open_data_air_traffic.stg_airports: Close
+[0m15:27:35.873098 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9ed3d235-634a-422a-8fa0-a201f240fa2f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C5EE512990>]}
+[0m15:27:35.875102 [info ] [Thread-1 (]: 1 of 7 OK created sql view model main.stg_airports ............................. [[32mOK[0m in 0.25s]
+[0m15:27:35.877098 [debug] [Thread-1 (]: Finished running node model.open_data_air_traffic.stg_airports
+[0m15:27:35.880096 [debug] [Thread-2 (]: SQL status: OK in 0.093 seconds
+[0m15:27:35.885406 [debug] [Thread-2 (]: Using duckdb connection "model.open_data_air_traffic.stg_opensky_flights"
+[0m15:27:35.886405 [debug] [Thread-2 (]: On model.open_data_air_traffic.stg_opensky_flights: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_opensky_flights"} */
+alter view "analytics"."main"."stg_opensky_flights" rename to "stg_opensky_flights__dbt_backup"
+[0m15:27:35.887408 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m15:27:35.889408 [debug] [Thread-3 (]: Failed to rollback 'model.open_data_air_traffic.stg_weather_hourly'
+[0m15:27:35.894512 [debug] [Thread-2 (]: Using duckdb connection "model.open_data_air_traffic.stg_opensky_flights"
+[0m15:27:35.894512 [debug] [Thread-3 (]: On model.open_data_air_traffic.stg_weather_hourly: Close
+[0m15:27:35.895513 [debug] [Thread-2 (]: On model.open_data_air_traffic.stg_opensky_flights: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_opensky_flights"} */
+alter view "analytics"."main"."stg_opensky_flights__dbt_tmp" rename to "stg_opensky_flights"
+[0m15:27:35.898511 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m15:27:35.900512 [debug] [Thread-2 (]: On model.open_data_air_traffic.stg_opensky_flights: COMMIT
+[0m15:27:35.903027 [debug] [Thread-3 (]: Runtime Error in model stg_weather_hourly (models\staging\stg_weather_hourly.sql)
+  Binder Error: Table function "range" does not support lateral join column parameters - cannot use column "time_list" in this context
+[0m15:27:35.904026 [debug] [Thread-2 (]: Using duckdb connection "model.open_data_air_traffic.stg_opensky_flights"
+[0m15:27:35.905025 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9ed3d235-634a-422a-8fa0-a201f240fa2f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C5EEB5E5D0>]}
+[0m15:27:35.906532 [debug] [Thread-2 (]: On model.open_data_air_traffic.stg_opensky_flights: COMMIT
+[0m15:27:35.907541 [error] [Thread-3 (]: 3 of 7 ERROR creating sql view model main.stg_weather_hourly ................... [[31mERROR[0m in 0.28s]
+[0m15:27:35.909538 [debug] [Thread-3 (]: Finished running node model.open_data_air_traffic.stg_weather_hourly
+[0m15:27:35.909538 [debug] [Thread-7 (]: Marking all children of 'model.open_data_air_traffic.stg_weather_hourly' to be skipped because of status 'error'.  Reason: Runtime Error in model stg_weather_hourly (models\staging\stg_weather_hourly.sql)
+  Binder Error: Table function "range" does not support lateral join column parameters - cannot use column "time_list" in this context.
+[0m15:27:35.912052 [debug] [Thread-2 (]: SQL status: OK in 0.004 seconds
+[0m15:27:35.916116 [debug] [Thread-2 (]: Using duckdb connection "model.open_data_air_traffic.stg_opensky_flights"
+[0m15:27:35.917123 [debug] [Thread-2 (]: On model.open_data_air_traffic.stg_opensky_flights: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_opensky_flights"} */
+drop view if exists "analytics"."main"."stg_opensky_flights__dbt_backup" cascade
+[0m15:27:35.920121 [debug] [Thread-2 (]: SQL status: OK in 0.003 seconds
+[0m15:27:35.922122 [debug] [Thread-2 (]: On model.open_data_air_traffic.stg_opensky_flights: Close
+[0m15:27:35.937221 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9ed3d235-634a-422a-8fa0-a201f240fa2f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C5EEB5F4D0>]}
+[0m15:27:35.938221 [info ] [Thread-2 (]: 2 of 7 OK created sql view model main.stg_opensky_flights ...................... [[32mOK[0m in 0.32s]
+[0m15:27:35.940222 [debug] [Thread-2 (]: Finished running node model.open_data_air_traffic.stg_opensky_flights
+[0m15:27:35.941221 [debug] [Thread-4 (]: Began running node model.open_data_air_traffic.int_flights_with_weather
+[0m15:27:35.942221 [info ] [Thread-4 (]: 4 of 7 SKIP relation main.int_flights_with_weather ............................. [[33mSKIP[0m]
+[0m15:27:35.942221 [debug] [Thread-4 (]: Finished running node model.open_data_air_traffic.int_flights_with_weather
+[0m15:27:35.943349 [debug] [Thread-3 (]: Began running node model.open_data_air_traffic.mart_flight_features
+[0m15:27:35.944353 [debug] [Thread-2 (]: Began running node model.open_data_air_traffic.qa_daily_completeness
+[0m15:27:35.945355 [debug] [Thread-1 (]: Began running node model.open_data_air_traffic.qa_join_coverage
+[0m15:27:35.945355 [info ] [Thread-3 (]: 5 of 7 SKIP relation main.mart_flight_features ................................. [[33mSKIP[0m]
+[0m15:27:35.946352 [info ] [Thread-2 (]: 6 of 7 SKIP relation main.qa_daily_completeness ................................ [[33mSKIP[0m]
+[0m15:27:35.947712 [info ] [Thread-1 (]: 7 of 7 SKIP relation main.qa_join_coverage ..................................... [[33mSKIP[0m]
+[0m15:27:35.947712 [debug] [Thread-3 (]: Finished running node model.open_data_air_traffic.mart_flight_features
+[0m15:27:35.948710 [debug] [Thread-2 (]: Finished running node model.open_data_air_traffic.qa_daily_completeness
+[0m15:27:35.949710 [debug] [Thread-1 (]: Finished running node model.open_data_air_traffic.qa_join_coverage
+[0m15:27:35.952220 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:27:35.953227 [debug] [MainThread]: On master: BEGIN
+[0m15:27:35.953227 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:27:35.962228 [debug] [MainThread]: SQL status: OK in 0.008 seconds
+[0m15:27:35.963496 [debug] [MainThread]: On master: COMMIT
+[0m15:27:35.964497 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:27:35.965497 [debug] [MainThread]: On master: COMMIT
+[0m15:27:35.965497 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m15:27:35.966507 [debug] [MainThread]: On master: Close
+[0m15:27:35.969502 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:27:35.969502 [debug] [MainThread]: Connection 'create_analytics_main' was properly closed.
+[0m15:27:35.970503 [debug] [MainThread]: Connection 'list_analytics_main' was properly closed.
+[0m15:27:35.970503 [debug] [MainThread]: Connection 'model.open_data_air_traffic.stg_airports' was properly closed.
+[0m15:27:35.972010 [debug] [MainThread]: Connection 'model.open_data_air_traffic.stg_opensky_flights' was properly closed.
+[0m15:27:35.972010 [debug] [MainThread]: Connection 'model.open_data_air_traffic.stg_weather_hourly' was properly closed.
+[0m15:27:35.973020 [info ] [MainThread]: 
+[0m15:27:35.974019 [info ] [MainThread]: Finished running 1 table model, 6 view models in 0 hours 0 minutes and 0.73 seconds (0.73s).
+[0m15:27:35.975023 [debug] [MainThread]: Command end result
+[0m15:27:36.013145 [debug] [MainThread]: Wrote artifact WritableManifest to H:\Bureau\Pro\Ecole\Open Data\dbt\target\manifest.json
+[0m15:27:36.018141 [debug] [MainThread]: Wrote artifact SemanticManifest to H:\Bureau\Pro\Ecole\Open Data\dbt\target\semantic_manifest.json
+[0m15:27:36.026245 [debug] [MainThread]: Wrote artifact RunExecutionResult to H:\Bureau\Pro\Ecole\Open Data\dbt\target\run_results.json
+[0m15:27:36.027245 [info ] [MainThread]: 
+[0m15:27:36.028250 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m15:27:36.029245 [info ] [MainThread]: 
+[0m15:27:36.030245 [error] [MainThread]: [31mFailure in model stg_weather_hourly (models\staging\stg_weather_hourly.sql)[0m
+[0m15:27:36.031246 [error] [MainThread]:   Runtime Error in model stg_weather_hourly (models\staging\stg_weather_hourly.sql)
+  Binder Error: Table function "range" does not support lateral join column parameters - cannot use column "time_list" in this context
+[0m15:27:36.031246 [info ] [MainThread]: 
+[0m15:27:36.032245 [info ] [MainThread]:   compiled code at target\compiled\open_data_air_traffic\models\staging\stg_weather_hourly.sql
+[0m15:27:36.032245 [info ] [MainThread]: 
+[0m15:27:36.033390 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=4 NO-OP=0 TOTAL=7
+[0m15:27:36.035390 [debug] [MainThread]: Command `dbt run` failed at 15:27:36.035390 after 3.25 seconds
+[0m15:27:36.036397 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C5ECA687A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C5E9D24F80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C5EBFA5070>]}
+[0m15:27:36.037398 [debug] [MainThread]: Flushing usage events
+[0m15:27:36.429364 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:27:54.612227 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000195AAD88050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000195AD8DC230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000195AD8DDDF0>]}
+
+
+============================== 15:27:54.618253 | 0811aa46-1b5e-4d37-b347-8e56457fb103 ==============================
+[0m15:27:54.618253 [info ] [MainThread]: Running with dbt=1.11.2
+[0m15:27:54.619758 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'H:\\Bureau\\Pro\\Ecole\\Open Data\\dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt seed', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'H:\\Bureau\\Pro\\Ecole\\Open Data\\dbt\\logs'}
+[0m15:27:54.959412 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0811aa46-1b5e-4d37-b347-8e56457fb103', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000195AF400860>]}
+[0m15:27:55.073082 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0811aa46-1b5e-4d37-b347-8e56457fb103', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000195A7999460>]}
+[0m15:27:55.076588 [info ] [MainThread]: Registered adapter: duckdb=1.8.3
+[0m15:27:55.536139 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m15:27:55.755232 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:27:55.756230 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m15:27:55.756230 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:27:55.827281 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0811aa46-1b5e-4d37-b347-8e56457fb103', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000195AF5F0290>]}
+[0m15:27:55.947610 [debug] [MainThread]: Wrote artifact WritableManifest to H:\Bureau\Pro\Ecole\Open Data\dbt\target\manifest.json
+[0m15:27:55.950609 [debug] [MainThread]: Wrote artifact SemanticManifest to H:\Bureau\Pro\Ecole\Open Data\dbt\target\semantic_manifest.json
+[0m15:27:55.986243 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0811aa46-1b5e-4d37-b347-8e56457fb103', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000195AF764C80>]}
+[0m15:27:55.986749 [info ] [MainThread]: Found 7 models, 1 seed, 5 data tests, 455 macros
+[0m15:27:55.987757 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0811aa46-1b5e-4d37-b347-8e56457fb103', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000195AF564380>]}
+[0m15:27:55.989755 [info ] [MainThread]: 
+[0m15:27:55.990757 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:27:55.990757 [info ] [MainThread]: 
+[0m15:27:55.992265 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m15:27:55.994270 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_analytics'
+[0m15:27:56.122429 [debug] [ThreadPool]: Using duckdb connection "list_analytics"
+[0m15:27:56.123436 [debug] [ThreadPool]: On list_analytics: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "connection_name": "list_analytics"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where catalog_name = '"analytics"'
+    
+  
+  
+[0m15:27:56.124438 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:27:56.138467 [debug] [ThreadPool]: SQL status: OK in 0.013 seconds
+[0m15:27:56.139468 [debug] [ThreadPool]: On list_analytics: Close
+[0m15:27:56.143986 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_analytics, now create_analytics_main)
+[0m15:27:56.144982 [debug] [ThreadPool]: Creating schema "database: "analytics"
+schema: "main"
+"
+[0m15:27:56.154012 [debug] [ThreadPool]: Using duckdb connection "create_analytics_main"
+[0m15:27:56.155012 [debug] [ThreadPool]: On create_analytics_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "connection_name": "create_analytics_main"} */
+
+    
+        select type from duckdb_databases()
+        where database_name='analytics'
+        and type='sqlite'
+    
+  
+[0m15:27:56.155012 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:27:56.166549 [debug] [ThreadPool]: SQL status: OK in 0.011 seconds
+[0m15:27:56.168556 [debug] [ThreadPool]: Using duckdb connection "create_analytics_main"
+[0m15:27:56.168556 [debug] [ThreadPool]: On create_analytics_main: BEGIN
+[0m15:27:56.169554 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:27:56.170559 [debug] [ThreadPool]: Using duckdb connection "create_analytics_main"
+[0m15:27:56.172066 [debug] [ThreadPool]: On create_analytics_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "connection_name": "create_analytics_main"} */
+
+    
+    
+        create schema if not exists "analytics"."main"
+    
+[0m15:27:56.173075 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:27:56.174074 [debug] [ThreadPool]: On create_analytics_main: COMMIT
+[0m15:27:56.175074 [debug] [ThreadPool]: Using duckdb connection "create_analytics_main"
+[0m15:27:56.175074 [debug] [ThreadPool]: On create_analytics_main: COMMIT
+[0m15:27:56.176580 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m15:27:56.177588 [debug] [ThreadPool]: On create_analytics_main: Close
+[0m15:27:56.188101 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_analytics_main'
+[0m15:27:56.196327 [debug] [ThreadPool]: Using duckdb connection "list_analytics_main"
+[0m15:27:56.197326 [debug] [ThreadPool]: On list_analytics_main: BEGIN
+[0m15:27:56.199327 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:27:56.209031 [debug] [ThreadPool]: SQL status: OK in 0.011 seconds
+[0m15:27:56.210030 [debug] [ThreadPool]: Using duckdb connection "list_analytics_main"
+[0m15:27:56.210030 [debug] [ThreadPool]: On list_analytics_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "connection_name": "list_analytics_main"} */
+select
+      'analytics' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'main'
+    and table_catalog = 'analytics'
+  
+[0m15:27:56.250215 [debug] [ThreadPool]: SQL status: OK in 0.039 seconds
+[0m15:27:56.258242 [debug] [ThreadPool]: On list_analytics_main: ROLLBACK
+[0m15:27:56.260242 [debug] [ThreadPool]: Failed to rollback 'list_analytics_main'
+[0m15:27:56.261242 [debug] [ThreadPool]: On list_analytics_main: Close
+[0m15:27:56.267263 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0811aa46-1b5e-4d37-b347-8e56457fb103', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000195AF58EC30>]}
+[0m15:27:56.268265 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:27:56.269264 [debug] [MainThread]: On master: BEGIN
+[0m15:27:56.270262 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:27:56.279301 [debug] [MainThread]: SQL status: OK in 0.010 seconds
+[0m15:27:56.280303 [debug] [MainThread]: On master: COMMIT
+[0m15:27:56.281304 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:27:56.282304 [debug] [MainThread]: On master: COMMIT
+[0m15:27:56.282304 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m15:27:56.283413 [debug] [MainThread]: On master: Close
+[0m15:27:56.291412 [debug] [Thread-1 (]: Began running node seed.open_data_air_traffic.holidays_eu
+[0m15:27:56.291412 [info ] [Thread-1 (]: 1 of 1 START seed file main.holidays_eu ........................................ [RUN]
+[0m15:27:56.292924 [debug] [Thread-1 (]: Acquiring new duckdb connection 'seed.open_data_air_traffic.holidays_eu'
+[0m15:27:56.292924 [debug] [Thread-1 (]: Began compiling node seed.open_data_air_traffic.holidays_eu
+[0m15:27:56.293927 [debug] [Thread-1 (]: Began executing node seed.open_data_air_traffic.holidays_eu
+[0m15:27:56.340563 [debug] [Thread-1 (]: Using duckdb connection "seed.open_data_air_traffic.holidays_eu"
+[0m15:27:56.340563 [debug] [Thread-1 (]: On seed.open_data_air_traffic.holidays_eu: BEGIN
+[0m15:27:56.342068 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:27:56.353108 [debug] [Thread-1 (]: SQL status: OK in 0.011 seconds
+[0m15:27:56.353108 [debug] [Thread-1 (]: Using duckdb connection "seed.open_data_air_traffic.holidays_eu"
+[0m15:27:56.354109 [debug] [Thread-1 (]: On seed.open_data_air_traffic.holidays_eu: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "seed.open_data_air_traffic.holidays_eu"} */
+truncate table "analytics"."main"."holidays_eu"
+[0m15:27:56.357109 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:27:56.372909 [debug] [Thread-1 (]: Using duckdb connection "seed.open_data_air_traffic.holidays_eu"
+[0m15:27:56.373910 [debug] [Thread-1 (]: On seed.open_data_air_traffic.holidays_eu: 
+          COPY "analytics"."main"."holidays_eu" FROM 'H:\Bureau\Pro\Ecole\Open Data\dbt\seeds\holidays_eu.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m15:27:56.377419 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:27:56.384459 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.open_data_air_traffic.holidays_eu"
+[0m15:27:56.406516 [debug] [Thread-1 (]: On seed.open_data_air_traffic.holidays_eu: COMMIT
+[0m15:27:56.407530 [debug] [Thread-1 (]: Using duckdb connection "seed.open_data_air_traffic.holidays_eu"
+[0m15:27:56.408525 [debug] [Thread-1 (]: On seed.open_data_air_traffic.holidays_eu: COMMIT
+[0m15:27:56.415038 [debug] [Thread-1 (]: SQL status: OK in 0.006 seconds
+[0m15:27:56.417557 [debug] [Thread-1 (]: On seed.open_data_air_traffic.holidays_eu: Close
+[0m15:27:56.438213 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0811aa46-1b5e-4d37-b347-8e56457fb103', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000195AAE846E0>]}
+[0m15:27:56.439212 [info ] [Thread-1 (]: 1 of 1 OK loaded seed file main.holidays_eu .................................... [[32mINSERT 1[0m in 0.14s]
+[0m15:27:56.440216 [debug] [Thread-1 (]: Finished running node seed.open_data_air_traffic.holidays_eu
+[0m15:27:56.442216 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:27:56.442727 [debug] [MainThread]: On master: BEGIN
+[0m15:27:56.442727 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:27:56.451246 [debug] [MainThread]: SQL status: OK in 0.008 seconds
+[0m15:27:56.452245 [debug] [MainThread]: On master: COMMIT
+[0m15:27:56.452245 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:27:56.452245 [debug] [MainThread]: On master: COMMIT
+[0m15:27:56.453379 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m15:27:56.454375 [debug] [MainThread]: On master: Close
+[0m15:27:56.457385 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:27:56.458382 [debug] [MainThread]: Connection 'create_analytics_main' was properly closed.
+[0m15:27:56.459383 [debug] [MainThread]: Connection 'list_analytics_main' was properly closed.
+[0m15:27:56.459383 [debug] [MainThread]: Connection 'seed.open_data_air_traffic.holidays_eu' was properly closed.
+[0m15:27:56.460386 [info ] [MainThread]: 
+[0m15:27:56.460386 [info ] [MainThread]: Finished running 1 seed in 0 hours 0 minutes and 0.47 seconds (0.47s).
+[0m15:27:56.462386 [debug] [MainThread]: Command end result
+[0m15:27:56.497228 [debug] [MainThread]: Wrote artifact WritableManifest to H:\Bureau\Pro\Ecole\Open Data\dbt\target\manifest.json
+[0m15:27:56.501226 [debug] [MainThread]: Wrote artifact SemanticManifest to H:\Bureau\Pro\Ecole\Open Data\dbt\target\semantic_manifest.json
+[0m15:27:56.510256 [debug] [MainThread]: Wrote artifact RunExecutionResult to H:\Bureau\Pro\Ecole\Open Data\dbt\target\run_results.json
+[0m15:27:56.511260 [info ] [MainThread]: 
+[0m15:27:56.512255 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:27:56.513346 [info ] [MainThread]: 
+[0m15:27:56.514346 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m15:27:56.516354 [debug] [MainThread]: Command `dbt seed` succeeded at 15:27:56.516354 after 2.07 seconds
+[0m15:27:56.517356 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000195ADF9D7C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000195ADFD07D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000195AD8DDDF0>]}
+[0m15:27:56.518357 [debug] [MainThread]: Flushing usage events
+[0m15:27:56.882126 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:28:01.772828 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E5C94F4200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E5CBF28200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E5CBF52CC0>]}
+
+
+============================== 15:28:01.782352 | 15b765b6-d8c8-4148-bd55-eabe5a8f7211 ==============================
+[0m15:28:01.782352 [info ] [MainThread]: Running with dbt=1.11.2
+[0m15:28:01.784831 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'H:\\Bureau\\Pro\\Ecole\\Open Data\\dbt', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'H:\\Bureau\\Pro\\Ecole\\Open Data\\dbt\\logs'}
+[0m15:28:02.153103 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '15b765b6-d8c8-4148-bd55-eabe5a8f7211', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E5CDBEC8F0>]}
+[0m15:28:02.249458 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '15b765b6-d8c8-4148-bd55-eabe5a8f7211', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E5CC61C0B0>]}
+[0m15:28:02.252457 [info ] [MainThread]: Registered adapter: duckdb=1.8.3
+[0m15:28:02.712120 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m15:28:02.906426 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:28:02.907435 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m15:28:02.907435 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:28:02.973857 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '15b765b6-d8c8-4148-bd55-eabe5a8f7211', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E5CDC41EB0>]}
+[0m15:28:03.084244 [debug] [MainThread]: Wrote artifact WritableManifest to H:\Bureau\Pro\Ecole\Open Data\dbt\target\manifest.json
+[0m15:28:03.089244 [debug] [MainThread]: Wrote artifact SemanticManifest to H:\Bureau\Pro\Ecole\Open Data\dbt\target\semantic_manifest.json
+[0m15:28:03.115424 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '15b765b6-d8c8-4148-bd55-eabe5a8f7211', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E5CE1DE780>]}
+[0m15:28:03.116432 [info ] [MainThread]: Found 7 models, 1 seed, 5 data tests, 455 macros
+[0m15:28:03.117429 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '15b765b6-d8c8-4148-bd55-eabe5a8f7211', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E5CDDD31D0>]}
+[0m15:28:03.119430 [info ] [MainThread]: 
+[0m15:28:03.120430 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:28:03.121431 [info ] [MainThread]: 
+[0m15:28:03.122939 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m15:28:03.130465 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_analytics'
+[0m15:28:03.257110 [debug] [ThreadPool]: Using duckdb connection "list_analytics"
+[0m15:28:03.257110 [debug] [ThreadPool]: On list_analytics: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "connection_name": "list_analytics"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where catalog_name = '"analytics"'
+    
+  
+  
+[0m15:28:03.258109 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:28:03.270136 [debug] [ThreadPool]: SQL status: OK in 0.012 seconds
+[0m15:28:03.272641 [debug] [ThreadPool]: On list_analytics: Close
+[0m15:28:03.276151 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_analytics, now create_analytics_main)
+[0m15:28:03.278157 [debug] [ThreadPool]: Creating schema "database: "analytics"
+schema: "main"
+"
+[0m15:28:03.286252 [debug] [ThreadPool]: Using duckdb connection "create_analytics_main"
+[0m15:28:03.287251 [debug] [ThreadPool]: On create_analytics_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "connection_name": "create_analytics_main"} */
+
+    
+        select type from duckdb_databases()
+        where database_name='analytics'
+        and type='sqlite'
+    
+  
+[0m15:28:03.287251 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:28:03.297278 [debug] [ThreadPool]: SQL status: OK in 0.010 seconds
+[0m15:28:03.299276 [debug] [ThreadPool]: Using duckdb connection "create_analytics_main"
+[0m15:28:03.299276 [debug] [ThreadPool]: On create_analytics_main: BEGIN
+[0m15:28:03.300276 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:28:03.301278 [debug] [ThreadPool]: Using duckdb connection "create_analytics_main"
+[0m15:28:03.302278 [debug] [ThreadPool]: On create_analytics_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "connection_name": "create_analytics_main"} */
+
+    
+    
+        create schema if not exists "analytics"."main"
+    
+[0m15:28:03.303411 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:28:03.304414 [debug] [ThreadPool]: On create_analytics_main: COMMIT
+[0m15:28:03.304414 [debug] [ThreadPool]: Using duckdb connection "create_analytics_main"
+[0m15:28:03.305920 [debug] [ThreadPool]: On create_analytics_main: COMMIT
+[0m15:28:03.306926 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:28:03.306926 [debug] [ThreadPool]: On create_analytics_main: Close
+[0m15:28:03.310932 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_analytics_main'
+[0m15:28:03.318444 [debug] [ThreadPool]: Using duckdb connection "list_analytics_main"
+[0m15:28:03.319444 [debug] [ThreadPool]: On list_analytics_main: BEGIN
+[0m15:28:03.319444 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:28:03.329748 [debug] [ThreadPool]: SQL status: OK in 0.010 seconds
+[0m15:28:03.330739 [debug] [ThreadPool]: Using duckdb connection "list_analytics_main"
+[0m15:28:03.330739 [debug] [ThreadPool]: On list_analytics_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "connection_name": "list_analytics_main"} */
+select
+      'analytics' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'main'
+    and table_catalog = 'analytics'
+  
+[0m15:28:03.366484 [debug] [ThreadPool]: SQL status: OK in 0.035 seconds
+[0m15:28:03.374010 [debug] [ThreadPool]: On list_analytics_main: ROLLBACK
+[0m15:28:03.376514 [debug] [ThreadPool]: Failed to rollback 'list_analytics_main'
+[0m15:28:03.376514 [debug] [ThreadPool]: On list_analytics_main: Close
+[0m15:28:03.382041 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '15b765b6-d8c8-4148-bd55-eabe5a8f7211', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E5CDC41520>]}
+[0m15:28:03.383060 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:28:03.384083 [debug] [MainThread]: On master: BEGIN
+[0m15:28:03.384083 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:28:03.392076 [debug] [MainThread]: SQL status: OK in 0.008 seconds
+[0m15:28:03.393086 [debug] [MainThread]: On master: COMMIT
+[0m15:28:03.394083 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:28:03.395084 [debug] [MainThread]: On master: COMMIT
+[0m15:28:03.395084 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m15:28:03.395084 [debug] [MainThread]: On master: Close
+[0m15:28:03.403136 [debug] [Thread-1 (]: Began running node model.open_data_air_traffic.stg_airports
+[0m15:28:03.404131 [debug] [Thread-2 (]: Began running node model.open_data_air_traffic.stg_opensky_flights
+[0m15:28:03.404131 [debug] [Thread-3 (]: Began running node model.open_data_air_traffic.stg_weather_hourly
+[0m15:28:03.405140 [info ] [Thread-1 (]: 1 of 7 START sql view model main.stg_airports .................................. [RUN]
+[0m15:28:03.406133 [info ] [Thread-2 (]: 2 of 7 START sql view model main.stg_opensky_flights ........................... [RUN]
+[0m15:28:03.408139 [info ] [Thread-3 (]: 3 of 7 START sql view model main.stg_weather_hourly ............................ [RUN]
+[0m15:28:03.409131 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.open_data_air_traffic.stg_airports'
+[0m15:28:03.409131 [debug] [Thread-2 (]: Acquiring new duckdb connection 'model.open_data_air_traffic.stg_opensky_flights'
+[0m15:28:03.410138 [debug] [Thread-3 (]: Acquiring new duckdb connection 'model.open_data_air_traffic.stg_weather_hourly'
+[0m15:28:03.411131 [debug] [Thread-1 (]: Began compiling node model.open_data_air_traffic.stg_airports
+[0m15:28:03.411131 [debug] [Thread-2 (]: Began compiling node model.open_data_air_traffic.stg_opensky_flights
+[0m15:28:03.412637 [debug] [Thread-3 (]: Began compiling node model.open_data_air_traffic.stg_weather_hourly
+[0m15:28:03.422163 [debug] [Thread-1 (]: Writing injected SQL for node "model.open_data_air_traffic.stg_airports"
+[0m15:28:03.426191 [debug] [Thread-2 (]: Writing injected SQL for node "model.open_data_air_traffic.stg_opensky_flights"
+[0m15:28:03.430728 [debug] [Thread-3 (]: Writing injected SQL for node "model.open_data_air_traffic.stg_weather_hourly"
+[0m15:28:03.432236 [debug] [Thread-1 (]: Began executing node model.open_data_air_traffic.stg_airports
+[0m15:28:03.433243 [debug] [Thread-2 (]: Began executing node model.open_data_air_traffic.stg_opensky_flights
+[0m15:28:03.480581 [debug] [Thread-1 (]: Writing runtime sql for node "model.open_data_air_traffic.stg_airports"
+[0m15:28:03.485099 [debug] [Thread-2 (]: Writing runtime sql for node "model.open_data_air_traffic.stg_opensky_flights"
+[0m15:28:03.486612 [debug] [Thread-3 (]: Began executing node model.open_data_air_traffic.stg_weather_hourly
+[0m15:28:03.490618 [debug] [Thread-3 (]: Writing runtime sql for node "model.open_data_air_traffic.stg_weather_hourly"
+[0m15:28:03.492121 [debug] [Thread-1 (]: Using duckdb connection "model.open_data_air_traffic.stg_airports"
+[0m15:28:03.493136 [debug] [Thread-2 (]: Using duckdb connection "model.open_data_air_traffic.stg_opensky_flights"
+[0m15:28:03.494127 [debug] [Thread-1 (]: On model.open_data_air_traffic.stg_airports: BEGIN
+[0m15:28:03.494127 [debug] [Thread-2 (]: On model.open_data_air_traffic.stg_opensky_flights: BEGIN
+[0m15:28:03.495135 [debug] [Thread-3 (]: Using duckdb connection "model.open_data_air_traffic.stg_weather_hourly"
+[0m15:28:03.495135 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:28:03.496137 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m15:28:03.496137 [debug] [Thread-3 (]: On model.open_data_air_traffic.stg_weather_hourly: BEGIN
+[0m15:28:03.506154 [debug] [Thread-1 (]: SQL status: OK in 0.011 seconds
+[0m15:28:03.507170 [debug] [Thread-2 (]: SQL status: OK in 0.011 seconds
+[0m15:28:03.507170 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m15:28:03.508169 [debug] [Thread-1 (]: Using duckdb connection "model.open_data_air_traffic.stg_airports"
+[0m15:28:03.508169 [debug] [Thread-2 (]: Using duckdb connection "model.open_data_air_traffic.stg_opensky_flights"
+[0m15:28:03.509169 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m15:28:03.509169 [debug] [Thread-1 (]: On model.open_data_air_traffic.stg_airports: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_airports"} */
+
+  
+  create view "analytics"."main"."stg_airports__dbt_tmp" as (
+    select
+    upper(icao) as icao,
+    latitude,
+    longitude,
+    coalesce(timezone, 'UTC') as timezone,
+    upper(country_code) as country_code
+from read_csv_auto('../data/reference/airports_eu.csv')
+  );
+
+[0m15:28:03.510170 [debug] [Thread-2 (]: On model.open_data_air_traffic.stg_opensky_flights: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_opensky_flights"} */
+
+  
+  create view "analytics"."main"."stg_opensky_flights__dbt_tmp" as (
+    with raw as (
+    select *
+    from read_json_auto(
+        '../data/raw/opensky/*/*.jsonl',
+        union_by_name=true
+    )
+)
+
+select
+    icao24,
+    trim(callsign) as callsign,
+    estDepartureAirport as est_departure_airport,
+    estArrivalAirport as est_arrival_airport,
+    firstSeen as first_seen,
+    lastSeen as last_seen,
+    estDepartureAirportHorizDistance as est_departure_airport_horiz_distance,
+    estDepartureAirportVertDistance as est_departure_airport_vert_distance,
+    estArrivalAirportHorizDistance as est_arrival_airport_horiz_distance,
+    estArrivalAirportVertDistance as est_arrival_airport_vert_distance,
+    departureAirportCandidatesCount as departure_airport_candidates_count,
+    arrivalAirportCandidatesCount as arrival_airport_candidates_count,
+    flight_type,
+    airport_icao,
+    to_timestamp(firstSeen) as first_seen_ts_utc,
+    to_timestamp(lastSeen) as last_seen_ts_utc,
+    date_trunc('hour', to_timestamp(firstSeen)) as first_seen_hour_utc,
+    date_trunc('hour', to_timestamp(lastSeen)) as last_seen_hour_utc
+from raw
+  );
+
+[0m15:28:03.511160 [debug] [Thread-3 (]: Using duckdb connection "model.open_data_air_traffic.stg_weather_hourly"
+[0m15:28:03.512690 [debug] [Thread-3 (]: On model.open_data_air_traffic.stg_weather_hourly: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_weather_hourly"} */
+
+  
+  create view "analytics"."main"."stg_weather_hourly__dbt_tmp" as (
+    with raw as (
+    select *
+    from read_json_auto(
+        '../data/raw/weather/*/*.json',
+        union_by_name=true
+    )
+),
+expanded as (
+    select
+        airport_icao,
+        timezone,
+        hourly.time as time_list,
+        hourly.temperature_2m as temperature_2m_list,
+        hourly.precipitation as precipitation_list,
+        hourly.wind_speed_10m as wind_speed_10m_list,
+        hourly.cloud_cover as cloud_cover_list
+    from raw
+)
+
+select
+    airport_icao,
+    coalesce(timezone, 'UTC') as timezone,
+    list_extract(time_list, i) as time_local,
+    strptime(list_extract(time_list, i), '%Y-%m-%dT%H:%M') as time_utc,
+    list_extract(temperature_2m_list, i) as temperature_2m,
+    list_extract(precipitation_list, i) as precipitation,
+    list_extract(wind_speed_10m_list, i) as wind_speed_10m,
+    list_extract(cloud_cover_list, i) as cloud_cover
+from expanded, range(0, list_count(time_list)) as t(i)
+  );
+
+[0m15:28:03.514694 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m15:28:03.525253 [debug] [Thread-1 (]: Using duckdb connection "model.open_data_air_traffic.stg_airports"
+[0m15:28:03.525253 [debug] [Thread-1 (]: On model.open_data_air_traffic.stg_airports: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_airports"} */
+alter view "analytics"."main"."stg_airports" rename to "stg_airports__dbt_backup"
+[0m15:28:03.526888 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:28:03.530904 [debug] [Thread-1 (]: Using duckdb connection "model.open_data_air_traffic.stg_airports"
+[0m15:28:03.532420 [debug] [Thread-1 (]: On model.open_data_air_traffic.stg_airports: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_airports"} */
+alter view "analytics"."main"."stg_airports__dbt_tmp" rename to "stg_airports"
+[0m15:28:03.533427 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:28:03.559539 [debug] [Thread-3 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_weather_hourly"} */
+
+  
+  create view "analytics"."main"."stg_weather_hourly__dbt_tmp" as (
+    with raw as (
+    select *
+    from read_json_auto(
+        '../data/raw/weather/*/*.json',
+        union_by_name=true
+    )
+),
+expanded as (
+    select
+        airport_icao,
+        timezone,
+        hourly.time as time_list,
+        hourly.temperature_2m as temperature_2m_list,
+        hourly.precipitation as precipitation_list,
+        hourly.wind_speed_10m as wind_speed_10m_list,
+        hourly.cloud_cover as cloud_cover_list
+    from raw
+)
+
+select
+    airport_icao,
+    coalesce(timezone, 'UTC') as timezone,
+    list_extract(time_list, i) as time_local,
+    strptime(list_extract(time_list, i), '%Y-%m-%dT%H:%M') as time_utc,
+    list_extract(temperature_2m_list, i) as temperature_2m,
+    list_extract(precipitation_list, i) as precipitation,
+    list_extract(wind_speed_10m_list, i) as wind_speed_10m,
+    list_extract(cloud_cover_list, i) as cloud_cover
+from expanded, range(0, list_count(time_list)) as t(i)
+  );
+
+[0m15:28:03.564094 [debug] [Thread-1 (]: On model.open_data_air_traffic.stg_airports: COMMIT
+[0m15:28:03.565092 [debug] [Thread-3 (]: DuckDB adapter: Rolling back transaction.
+[0m15:28:03.565092 [debug] [Thread-1 (]: Using duckdb connection "model.open_data_air_traffic.stg_airports"
+[0m15:28:03.566597 [debug] [Thread-3 (]: On model.open_data_air_traffic.stg_weather_hourly: ROLLBACK
+[0m15:28:03.567605 [debug] [Thread-1 (]: On model.open_data_air_traffic.stg_airports: COMMIT
+[0m15:28:03.574138 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m15:28:03.582143 [debug] [Thread-1 (]: Using duckdb connection "model.open_data_air_traffic.stg_airports"
+[0m15:28:03.584667 [debug] [Thread-3 (]: Failed to rollback 'model.open_data_air_traffic.stg_weather_hourly'
+[0m15:28:03.584667 [debug] [Thread-1 (]: On model.open_data_air_traffic.stg_airports: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_airports"} */
+drop view if exists "analytics"."main"."stg_airports__dbt_backup" cascade
+[0m15:28:03.586173 [debug] [Thread-3 (]: On model.open_data_air_traffic.stg_weather_hourly: Close
+[0m15:28:03.590179 [debug] [Thread-3 (]: Runtime Error in model stg_weather_hourly (models\staging\stg_weather_hourly.sql)
+  Binder Error: Table function "range" does not support lateral join column parameters - cannot use column "time_list" in this context
+[0m15:28:03.591180 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m15:28:03.596212 [debug] [Thread-1 (]: On model.open_data_air_traffic.stg_airports: Close
+[0m15:28:03.597226 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '15b765b6-d8c8-4148-bd55-eabe5a8f7211', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E5CBB99CA0>]}
+[0m15:28:03.598219 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '15b765b6-d8c8-4148-bd55-eabe5a8f7211', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E5CE55BFB0>]}
+[0m15:28:03.599218 [error] [Thread-3 (]: 3 of 7 ERROR creating sql view model main.stg_weather_hourly ................... [[31mERROR[0m in 0.18s]
+[0m15:28:03.600230 [debug] [Thread-2 (]: SQL status: OK in 0.088 seconds
+[0m15:28:03.600230 [info ] [Thread-1 (]: 1 of 7 OK created sql view model main.stg_airports ............................. [[32mOK[0m in 0.19s]
+[0m15:28:03.601256 [debug] [Thread-3 (]: Finished running node model.open_data_air_traffic.stg_weather_hourly
+[0m15:28:03.606245 [debug] [Thread-2 (]: Using duckdb connection "model.open_data_air_traffic.stg_opensky_flights"
+[0m15:28:03.607260 [debug] [Thread-1 (]: Finished running node model.open_data_air_traffic.stg_airports
+[0m15:28:03.608266 [debug] [Thread-7 (]: Marking all children of 'model.open_data_air_traffic.stg_weather_hourly' to be skipped because of status 'error'.  Reason: Runtime Error in model stg_weather_hourly (models\staging\stg_weather_hourly.sql)
+  Binder Error: Table function "range" does not support lateral join column parameters - cannot use column "time_list" in this context.
+[0m15:28:03.609260 [debug] [Thread-2 (]: On model.open_data_air_traffic.stg_opensky_flights: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_opensky_flights"} */
+alter view "analytics"."main"."stg_opensky_flights" rename to "stg_opensky_flights__dbt_backup"
+[0m15:28:03.611259 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m15:28:03.615485 [debug] [Thread-2 (]: Using duckdb connection "model.open_data_air_traffic.stg_opensky_flights"
+[0m15:28:03.616498 [debug] [Thread-2 (]: On model.open_data_air_traffic.stg_opensky_flights: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_opensky_flights"} */
+alter view "analytics"."main"."stg_opensky_flights__dbt_tmp" rename to "stg_opensky_flights"
+[0m15:28:03.618498 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m15:28:03.620496 [debug] [Thread-2 (]: On model.open_data_air_traffic.stg_opensky_flights: COMMIT
+[0m15:28:03.620496 [debug] [Thread-2 (]: Using duckdb connection "model.open_data_air_traffic.stg_opensky_flights"
+[0m15:28:03.622006 [debug] [Thread-2 (]: On model.open_data_air_traffic.stg_opensky_flights: COMMIT
+[0m15:28:03.625012 [debug] [Thread-2 (]: SQL status: OK in 0.003 seconds
+[0m15:28:03.629046 [debug] [Thread-2 (]: Using duckdb connection "model.open_data_air_traffic.stg_opensky_flights"
+[0m15:28:03.630043 [debug] [Thread-2 (]: On model.open_data_air_traffic.stg_opensky_flights: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_opensky_flights"} */
+drop view if exists "analytics"."main"."stg_opensky_flights__dbt_backup" cascade
+[0m15:28:03.632547 [debug] [Thread-2 (]: SQL status: OK in 0.002 seconds
+[0m15:28:03.634561 [debug] [Thread-2 (]: On model.open_data_air_traffic.stg_opensky_flights: Close
+[0m15:28:03.647593 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '15b765b6-d8c8-4148-bd55-eabe5a8f7211', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E5CE626F00>]}
+[0m15:28:03.648594 [info ] [Thread-2 (]: 2 of 7 OK created sql view model main.stg_opensky_flights ...................... [[32mOK[0m in 0.24s]
+[0m15:28:03.649593 [debug] [Thread-2 (]: Finished running node model.open_data_air_traffic.stg_opensky_flights
+[0m15:28:03.650596 [debug] [Thread-4 (]: Began running node model.open_data_air_traffic.int_flights_with_weather
+[0m15:28:03.652111 [info ] [Thread-4 (]: 4 of 7 SKIP relation main.int_flights_with_weather ............................. [[33mSKIP[0m]
+[0m15:28:03.653124 [debug] [Thread-4 (]: Finished running node model.open_data_air_traffic.int_flights_with_weather
+[0m15:28:03.654118 [debug] [Thread-1 (]: Began running node model.open_data_air_traffic.mart_flight_features
+[0m15:28:03.655128 [debug] [Thread-2 (]: Began running node model.open_data_air_traffic.qa_daily_completeness
+[0m15:28:03.656124 [debug] [Thread-3 (]: Began running node model.open_data_air_traffic.qa_join_coverage
+[0m15:28:03.656124 [info ] [Thread-1 (]: 5 of 7 SKIP relation main.mart_flight_features ................................. [[33mSKIP[0m]
+[0m15:28:03.657123 [info ] [Thread-2 (]: 6 of 7 SKIP relation main.qa_daily_completeness ................................ [[33mSKIP[0m]
+[0m15:28:03.658125 [info ] [Thread-3 (]: 7 of 7 SKIP relation main.qa_join_coverage ..................................... [[33mSKIP[0m]
+[0m15:28:03.659126 [debug] [Thread-1 (]: Finished running node model.open_data_air_traffic.mart_flight_features
+[0m15:28:03.660124 [debug] [Thread-2 (]: Finished running node model.open_data_air_traffic.qa_daily_completeness
+[0m15:28:03.660124 [debug] [Thread-3 (]: Finished running node model.open_data_air_traffic.qa_join_coverage
+[0m15:28:03.662124 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:28:03.663255 [debug] [MainThread]: On master: BEGIN
+[0m15:28:03.664259 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:28:03.673864 [debug] [MainThread]: SQL status: OK in 0.009 seconds
+[0m15:28:03.673864 [debug] [MainThread]: On master: COMMIT
+[0m15:28:03.674866 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:28:03.676375 [debug] [MainThread]: On master: COMMIT
+[0m15:28:03.677385 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m15:28:03.678385 [debug] [MainThread]: On master: Close
+[0m15:28:03.680382 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:28:03.681384 [debug] [MainThread]: Connection 'create_analytics_main' was properly closed.
+[0m15:28:03.681384 [debug] [MainThread]: Connection 'list_analytics_main' was properly closed.
+[0m15:28:03.682391 [debug] [MainThread]: Connection 'model.open_data_air_traffic.stg_airports' was properly closed.
+[0m15:28:03.682391 [debug] [MainThread]: Connection 'model.open_data_air_traffic.stg_opensky_flights' was properly closed.
+[0m15:28:03.683488 [debug] [MainThread]: Connection 'model.open_data_air_traffic.stg_weather_hourly' was properly closed.
+[0m15:28:03.684485 [info ] [MainThread]: 
+[0m15:28:03.685483 [info ] [MainThread]: Finished running 1 table model, 6 view models in 0 hours 0 minutes and 0.56 seconds (0.56s).
+[0m15:28:03.687500 [debug] [MainThread]: Command end result
+[0m15:28:03.720100 [debug] [MainThread]: Wrote artifact WritableManifest to H:\Bureau\Pro\Ecole\Open Data\dbt\target\manifest.json
+[0m15:28:03.724164 [debug] [MainThread]: Wrote artifact SemanticManifest to H:\Bureau\Pro\Ecole\Open Data\dbt\target\semantic_manifest.json
+[0m15:28:03.734199 [debug] [MainThread]: Wrote artifact RunExecutionResult to H:\Bureau\Pro\Ecole\Open Data\dbt\target\run_results.json
+[0m15:28:03.735197 [info ] [MainThread]: 
+[0m15:28:03.736198 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m15:28:03.737206 [info ] [MainThread]: 
+[0m15:28:03.737206 [error] [MainThread]: [31mFailure in model stg_weather_hourly (models\staging\stg_weather_hourly.sql)[0m
+[0m15:28:03.738204 [error] [MainThread]:   Runtime Error in model stg_weather_hourly (models\staging\stg_weather_hourly.sql)
+  Binder Error: Table function "range" does not support lateral join column parameters - cannot use column "time_list" in this context
+[0m15:28:03.739205 [info ] [MainThread]: 
+[0m15:28:03.741210 [info ] [MainThread]:   compiled code at target\compiled\open_data_air_traffic\models\staging\stg_weather_hourly.sql
+[0m15:28:03.742206 [info ] [MainThread]: 
+[0m15:28:03.742718 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=4 NO-OP=0 TOTAL=7
+[0m15:28:03.744721 [debug] [MainThread]: Command `dbt run` failed at 15:28:03.744721 after 2.15 seconds
+[0m15:28:03.744721 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E5C94F4200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E5CE200A70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E5CBC51160>]}
+[0m15:28:03.746226 [debug] [MainThread]: Flushing usage events
+[0m15:28:04.101149 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:29:00.926442 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B64B3A690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B6105CBF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B63B09670>]}
+
+
+============================== 15:29:00.932448 | ca6c8b43-d8bd-4d51-a0eb-6db1811a6d1d ==============================
+[0m15:29:00.932448 [info ] [MainThread]: Running with dbt=1.11.2
+[0m15:29:00.934475 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'H:\\Bureau\\Pro\\Ecole\\Open Data\\dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'log_path': 'H:\\Bureau\\Pro\\Ecole\\Open Data\\dbt\\logs'}
+[0m15:29:01.280176 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ca6c8b43-d8bd-4d51-a0eb-6db1811a6d1d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B65ED7D10>]}
+[0m15:29:01.380480 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ca6c8b43-d8bd-4d51-a0eb-6db1811a6d1d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B64C297C0>]}
+[0m15:29:01.385005 [info ] [MainThread]: Registered adapter: duckdb=1.8.3
+[0m15:29:01.888555 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m15:29:02.114396 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m15:29:02.116397 [debug] [MainThread]: Partial parsing: updated file: open_data_air_traffic://models\staging\stg_weather_hourly.sql
+[0m15:29:02.822888 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ca6c8b43-d8bd-4d51-a0eb-6db1811a6d1d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B667AFDA0>]}
+[0m15:29:02.942324 [debug] [MainThread]: Wrote artifact WritableManifest to H:\Bureau\Pro\Ecole\Open Data\dbt\target\manifest.json
+[0m15:29:02.948196 [debug] [MainThread]: Wrote artifact SemanticManifest to H:\Bureau\Pro\Ecole\Open Data\dbt\target\semantic_manifest.json
+[0m15:29:02.979591 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ca6c8b43-d8bd-4d51-a0eb-6db1811a6d1d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B668CD1C0>]}
+[0m15:29:02.980590 [info ] [MainThread]: Found 7 models, 1 seed, 5 data tests, 455 macros
+[0m15:29:02.980590 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ca6c8b43-d8bd-4d51-a0eb-6db1811a6d1d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B66665EE0>]}
+[0m15:29:02.984105 [info ] [MainThread]: 
+[0m15:29:02.985105 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:29:02.986615 [info ] [MainThread]: 
+[0m15:29:02.987626 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m15:29:02.998139 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_analytics'
+[0m15:29:03.199278 [debug] [ThreadPool]: Using duckdb connection "list_analytics"
+[0m15:29:03.200277 [debug] [ThreadPool]: On list_analytics: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "connection_name": "list_analytics"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where catalog_name = '"analytics"'
+    
+  
+  
+[0m15:29:03.201279 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:29:03.213861 [debug] [ThreadPool]: SQL status: OK in 0.013 seconds
+[0m15:29:03.216382 [debug] [ThreadPool]: On list_analytics: Close
+[0m15:29:03.219387 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_analytics, now create_analytics_main)
+[0m15:29:03.220396 [debug] [ThreadPool]: Creating schema "database: "analytics"
+schema: "main"
+"
+[0m15:29:03.229465 [debug] [ThreadPool]: Using duckdb connection "create_analytics_main"
+[0m15:29:03.230466 [debug] [ThreadPool]: On create_analytics_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "connection_name": "create_analytics_main"} */
+
+    
+        select type from duckdb_databases()
+        where database_name='analytics'
+        and type='sqlite'
+    
+  
+[0m15:29:03.230466 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:29:03.241489 [debug] [ThreadPool]: SQL status: OK in 0.010 seconds
+[0m15:29:03.243553 [debug] [ThreadPool]: Using duckdb connection "create_analytics_main"
+[0m15:29:03.243553 [debug] [ThreadPool]: On create_analytics_main: BEGIN
+[0m15:29:03.244546 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:29:03.245546 [debug] [ThreadPool]: Using duckdb connection "create_analytics_main"
+[0m15:29:03.246537 [debug] [ThreadPool]: On create_analytics_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "connection_name": "create_analytics_main"} */
+
+    
+    
+        create schema if not exists "analytics"."main"
+    
+[0m15:29:03.247539 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:29:03.248549 [debug] [ThreadPool]: On create_analytics_main: COMMIT
+[0m15:29:03.249550 [debug] [ThreadPool]: Using duckdb connection "create_analytics_main"
+[0m15:29:03.249550 [debug] [ThreadPool]: On create_analytics_main: COMMIT
+[0m15:29:03.250540 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:29:03.250540 [debug] [ThreadPool]: On create_analytics_main: Close
+[0m15:29:03.255573 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_analytics_main'
+[0m15:29:03.262070 [debug] [ThreadPool]: Using duckdb connection "list_analytics_main"
+[0m15:29:03.263077 [debug] [ThreadPool]: On list_analytics_main: BEGIN
+[0m15:29:03.264079 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:29:03.274116 [debug] [ThreadPool]: SQL status: OK in 0.010 seconds
+[0m15:29:03.275128 [debug] [ThreadPool]: Using duckdb connection "list_analytics_main"
+[0m15:29:03.276124 [debug] [ThreadPool]: On list_analytics_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "connection_name": "list_analytics_main"} */
+select
+      'analytics' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'main'
+    and table_catalog = 'analytics'
+  
+[0m15:29:03.315289 [debug] [ThreadPool]: SQL status: OK in 0.039 seconds
+[0m15:29:03.322304 [debug] [ThreadPool]: On list_analytics_main: ROLLBACK
+[0m15:29:03.324673 [debug] [ThreadPool]: Failed to rollback 'list_analytics_main'
+[0m15:29:03.326181 [debug] [ThreadPool]: On list_analytics_main: Close
+[0m15:29:03.331190 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ca6c8b43-d8bd-4d51-a0eb-6db1811a6d1d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B668E5340>]}
+[0m15:29:03.332696 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:29:03.332696 [debug] [MainThread]: On master: BEGIN
+[0m15:29:03.333710 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:29:03.343756 [debug] [MainThread]: SQL status: OK in 0.010 seconds
+[0m15:29:03.344757 [debug] [MainThread]: On master: COMMIT
+[0m15:29:03.344757 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:29:03.346270 [debug] [MainThread]: On master: COMMIT
+[0m15:29:03.347280 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m15:29:03.347280 [debug] [MainThread]: On master: Close
+[0m15:29:03.354802 [debug] [Thread-1 (]: Began running node model.open_data_air_traffic.stg_airports
+[0m15:29:03.356309 [debug] [Thread-2 (]: Began running node model.open_data_air_traffic.stg_opensky_flights
+[0m15:29:03.357316 [debug] [Thread-3 (]: Began running node model.open_data_air_traffic.stg_weather_hourly
+[0m15:29:03.358323 [info ] [Thread-1 (]: 1 of 7 START sql view model main.stg_airports .................................. [RUN]
+[0m15:29:03.359322 [info ] [Thread-2 (]: 2 of 7 START sql view model main.stg_opensky_flights ........................... [RUN]
+[0m15:29:03.360322 [info ] [Thread-3 (]: 3 of 7 START sql view model main.stg_weather_hourly ............................ [RUN]
+[0m15:29:03.361317 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.open_data_air_traffic.stg_airports'
+[0m15:29:03.362319 [debug] [Thread-2 (]: Acquiring new duckdb connection 'model.open_data_air_traffic.stg_opensky_flights'
+[0m15:29:03.362319 [debug] [Thread-3 (]: Acquiring new duckdb connection 'model.open_data_air_traffic.stg_weather_hourly'
+[0m15:29:03.363537 [debug] [Thread-1 (]: Began compiling node model.open_data_air_traffic.stg_airports
+[0m15:29:03.364538 [debug] [Thread-2 (]: Began compiling node model.open_data_air_traffic.stg_opensky_flights
+[0m15:29:03.365546 [debug] [Thread-3 (]: Began compiling node model.open_data_air_traffic.stg_weather_hourly
+[0m15:29:03.374069 [debug] [Thread-1 (]: Writing injected SQL for node "model.open_data_air_traffic.stg_airports"
+[0m15:29:03.378591 [debug] [Thread-2 (]: Writing injected SQL for node "model.open_data_air_traffic.stg_opensky_flights"
+[0m15:29:03.382104 [debug] [Thread-3 (]: Writing injected SQL for node "model.open_data_air_traffic.stg_weather_hourly"
+[0m15:29:03.384114 [debug] [Thread-1 (]: Began executing node model.open_data_air_traffic.stg_airports
+[0m15:29:03.407222 [debug] [Thread-2 (]: Began executing node model.open_data_air_traffic.stg_opensky_flights
+[0m15:29:03.432548 [debug] [Thread-1 (]: Writing runtime sql for node "model.open_data_air_traffic.stg_airports"
+[0m15:29:03.437549 [debug] [Thread-3 (]: Began executing node model.open_data_air_traffic.stg_weather_hourly
+[0m15:29:03.438559 [debug] [Thread-2 (]: Writing runtime sql for node "model.open_data_air_traffic.stg_opensky_flights"
+[0m15:29:03.442062 [debug] [Thread-3 (]: Writing runtime sql for node "model.open_data_air_traffic.stg_weather_hourly"
+[0m15:29:03.444070 [debug] [Thread-1 (]: Using duckdb connection "model.open_data_air_traffic.stg_airports"
+[0m15:29:03.445082 [debug] [Thread-2 (]: Using duckdb connection "model.open_data_air_traffic.stg_opensky_flights"
+[0m15:29:03.445082 [debug] [Thread-1 (]: On model.open_data_air_traffic.stg_airports: BEGIN
+[0m15:29:03.446601 [debug] [Thread-2 (]: On model.open_data_air_traffic.stg_opensky_flights: BEGIN
+[0m15:29:03.446601 [debug] [Thread-3 (]: Using duckdb connection "model.open_data_air_traffic.stg_weather_hourly"
+[0m15:29:03.447621 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:29:03.447621 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m15:29:03.448616 [debug] [Thread-3 (]: On model.open_data_air_traffic.stg_weather_hourly: BEGIN
+[0m15:29:03.458143 [debug] [Thread-1 (]: SQL status: OK in 0.011 seconds
+[0m15:29:03.459153 [debug] [Thread-2 (]: SQL status: OK in 0.011 seconds
+[0m15:29:03.459153 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m15:29:03.460152 [debug] [Thread-1 (]: Using duckdb connection "model.open_data_air_traffic.stg_airports"
+[0m15:29:03.461153 [debug] [Thread-2 (]: Using duckdb connection "model.open_data_air_traffic.stg_opensky_flights"
+[0m15:29:03.462149 [debug] [Thread-1 (]: On model.open_data_air_traffic.stg_airports: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_airports"} */
+
+  
+  create view "analytics"."main"."stg_airports__dbt_tmp" as (
+    select
+    upper(icao) as icao,
+    latitude,
+    longitude,
+    coalesce(timezone, 'UTC') as timezone,
+    upper(country_code) as country_code
+from read_csv_auto('../data/reference/airports_eu.csv')
+  );
+
+[0m15:29:03.462149 [debug] [Thread-3 (]: SQL status: OK in 0.003 seconds
+[0m15:29:03.463244 [debug] [Thread-2 (]: On model.open_data_air_traffic.stg_opensky_flights: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_opensky_flights"} */
+
+  
+  create view "analytics"."main"."stg_opensky_flights__dbt_tmp" as (
+    with raw as (
+    select *
+    from read_json_auto(
+        '../data/raw/opensky/*/*.jsonl',
+        union_by_name=true
+    )
+)
+
+select
+    icao24,
+    trim(callsign) as callsign,
+    estDepartureAirport as est_departure_airport,
+    estArrivalAirport as est_arrival_airport,
+    firstSeen as first_seen,
+    lastSeen as last_seen,
+    estDepartureAirportHorizDistance as est_departure_airport_horiz_distance,
+    estDepartureAirportVertDistance as est_departure_airport_vert_distance,
+    estArrivalAirportHorizDistance as est_arrival_airport_horiz_distance,
+    estArrivalAirportVertDistance as est_arrival_airport_vert_distance,
+    departureAirportCandidatesCount as departure_airport_candidates_count,
+    arrivalAirportCandidatesCount as arrival_airport_candidates_count,
+    flight_type,
+    airport_icao,
+    to_timestamp(firstSeen) as first_seen_ts_utc,
+    to_timestamp(lastSeen) as last_seen_ts_utc,
+    date_trunc('hour', to_timestamp(firstSeen)) as first_seen_hour_utc,
+    date_trunc('hour', to_timestamp(lastSeen)) as last_seen_hour_utc
+from raw
+  );
+
+[0m15:29:03.464243 [debug] [Thread-3 (]: Using duckdb connection "model.open_data_air_traffic.stg_weather_hourly"
+[0m15:29:03.465233 [debug] [Thread-3 (]: On model.open_data_air_traffic.stg_weather_hourly: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_weather_hourly"} */
+
+  
+  create view "analytics"."main"."stg_weather_hourly__dbt_tmp" as (
+    with raw as (
+    select *
+    from read_json_auto(
+        '../data/raw/weather/*/*.json',
+        union_by_name=true
+    )
+),
+expanded as (
+    select
+        airport_icao,
+        timezone,
+        hourly.time as time_list,
+        hourly.temperature_2m as temperature_2m_list,
+        hourly.precipitation as precipitation_list,
+        hourly.wind_speed_10m as wind_speed_10m_list,
+        hourly.cloud_cover as cloud_cover_list
+    from raw
+)
+
+select
+    airport_icao,
+    coalesce(timezone, 'UTC') as timezone,
+    t.time_local as time_local,
+    strptime(t.time_local, '%Y-%m-%dT%H:%M') as time_utc,
+    t.temperature_2m as temperature_2m,
+    t.precipitation as precipitation,
+    t.wind_speed_10m as wind_speed_10m,
+    t.cloud_cover as cloud_cover
+from expanded,
+    unnest(
+        time_list,
+        temperature_2m_list,
+        precipitation_list,
+        wind_speed_10m_list,
+        cloud_cover_list
+    ) as t(time_local, temperature_2m, precipitation, wind_speed_10m, cloud_cover)
+  );
+
+[0m15:29:03.467238 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m15:29:03.479276 [debug] [Thread-1 (]: Using duckdb connection "model.open_data_air_traffic.stg_airports"
+[0m15:29:03.480279 [debug] [Thread-1 (]: On model.open_data_air_traffic.stg_airports: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_airports"} */
+alter view "analytics"."main"."stg_airports" rename to "stg_airports__dbt_backup"
+[0m15:29:03.482267 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:29:03.487390 [debug] [Thread-1 (]: Using duckdb connection "model.open_data_air_traffic.stg_airports"
+[0m15:29:03.487390 [debug] [Thread-1 (]: On model.open_data_air_traffic.stg_airports: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_airports"} */
+alter view "analytics"."main"."stg_airports__dbt_tmp" rename to "stg_airports"
+[0m15:29:03.489388 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:29:03.515033 [debug] [Thread-3 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_weather_hourly"} */
+
+  
+  create view "analytics"."main"."stg_weather_hourly__dbt_tmp" as (
+    with raw as (
+    select *
+    from read_json_auto(
+        '../data/raw/weather/*/*.json',
+        union_by_name=true
+    )
+),
+expanded as (
+    select
+        airport_icao,
+        timezone,
+        hourly.time as time_list,
+        hourly.temperature_2m as temperature_2m_list,
+        hourly.precipitation as precipitation_list,
+        hourly.wind_speed_10m as wind_speed_10m_list,
+        hourly.cloud_cover as cloud_cover_list
+    from raw
+)
+
+select
+    airport_icao,
+    coalesce(timezone, 'UTC') as timezone,
+    t.time_local as time_local,
+    strptime(t.time_local, '%Y-%m-%dT%H:%M') as time_utc,
+    t.temperature_2m as temperature_2m,
+    t.precipitation as precipitation,
+    t.wind_speed_10m as wind_speed_10m,
+    t.cloud_cover as cloud_cover
+from expanded,
+    unnest(
+        time_list,
+        temperature_2m_list,
+        precipitation_list,
+        wind_speed_10m_list,
+        cloud_cover_list
+    ) as t(time_local, temperature_2m, precipitation, wind_speed_10m, cloud_cover)
+  );
+
+[0m15:29:03.519572 [debug] [Thread-1 (]: On model.open_data_air_traffic.stg_airports: COMMIT
+[0m15:29:03.520560 [debug] [Thread-3 (]: DuckDB adapter: Rolling back transaction.
+[0m15:29:03.520560 [debug] [Thread-1 (]: Using duckdb connection "model.open_data_air_traffic.stg_airports"
+[0m15:29:03.522074 [debug] [Thread-3 (]: On model.open_data_air_traffic.stg_weather_hourly: ROLLBACK
+[0m15:29:03.523088 [debug] [Thread-1 (]: On model.open_data_air_traffic.stg_airports: COMMIT
+[0m15:29:03.528603 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m15:29:03.536128 [debug] [Thread-1 (]: Using duckdb connection "model.open_data_air_traffic.stg_airports"
+[0m15:29:03.537128 [debug] [Thread-1 (]: On model.open_data_air_traffic.stg_airports: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_airports"} */
+drop view if exists "analytics"."main"."stg_airports__dbt_backup" cascade
+[0m15:29:03.541130 [debug] [Thread-3 (]: Failed to rollback 'model.open_data_air_traffic.stg_weather_hourly'
+[0m15:29:03.542129 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m15:29:03.542129 [debug] [Thread-3 (]: On model.open_data_air_traffic.stg_weather_hourly: Close
+[0m15:29:03.547446 [debug] [Thread-1 (]: On model.open_data_air_traffic.stg_airports: Close
+[0m15:29:03.551446 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ca6c8b43-d8bd-4d51-a0eb-6db1811a6d1d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B67C47CE0>]}
+[0m15:29:03.554517 [debug] [Thread-3 (]: Runtime Error in model stg_weather_hourly (models\staging\stg_weather_hourly.sql)
+  Binder Error: UNNEST requires a single list as input
+[0m15:29:03.552451 [info ] [Thread-1 (]: 1 of 7 OK created sql view model main.stg_airports ............................. [[32mOK[0m in 0.19s]
+[0m15:29:03.556515 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ca6c8b43-d8bd-4d51-a0eb-6db1811a6d1d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B65E43200>]}
+[0m15:29:03.557517 [debug] [Thread-1 (]: Finished running node model.open_data_air_traffic.stg_airports
+[0m15:29:03.558514 [error] [Thread-3 (]: 3 of 7 ERROR creating sql view model main.stg_weather_hourly ................... [[31mERROR[0m in 0.19s]
+[0m15:29:03.559516 [debug] [Thread-3 (]: Finished running node model.open_data_air_traffic.stg_weather_hourly
+[0m15:29:03.560516 [debug] [Thread-7 (]: Marking all children of 'model.open_data_air_traffic.stg_weather_hourly' to be skipped because of status 'error'.  Reason: Runtime Error in model stg_weather_hourly (models\staging\stg_weather_hourly.sql)
+  Binder Error: UNNEST requires a single list as input.
+[0m15:29:03.562022 [debug] [Thread-2 (]: SQL status: OK in 0.096 seconds
+[0m15:29:03.568543 [debug] [Thread-2 (]: Using duckdb connection "model.open_data_air_traffic.stg_opensky_flights"
+[0m15:29:03.569545 [debug] [Thread-2 (]: On model.open_data_air_traffic.stg_opensky_flights: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_opensky_flights"} */
+alter view "analytics"."main"."stg_opensky_flights" rename to "stg_opensky_flights__dbt_backup"
+[0m15:29:03.570543 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m15:29:03.576562 [debug] [Thread-2 (]: Using duckdb connection "model.open_data_air_traffic.stg_opensky_flights"
+[0m15:29:03.577567 [debug] [Thread-2 (]: On model.open_data_air_traffic.stg_opensky_flights: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_opensky_flights"} */
+alter view "analytics"."main"."stg_opensky_flights__dbt_tmp" rename to "stg_opensky_flights"
+[0m15:29:03.578571 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m15:29:03.580568 [debug] [Thread-2 (]: On model.open_data_air_traffic.stg_opensky_flights: COMMIT
+[0m15:29:03.580568 [debug] [Thread-2 (]: Using duckdb connection "model.open_data_air_traffic.stg_opensky_flights"
+[0m15:29:03.582073 [debug] [Thread-2 (]: On model.open_data_air_traffic.stg_opensky_flights: COMMIT
+[0m15:29:03.585081 [debug] [Thread-2 (]: SQL status: OK in 0.003 seconds
+[0m15:29:03.589601 [debug] [Thread-2 (]: Using duckdb connection "model.open_data_air_traffic.stg_opensky_flights"
+[0m15:29:03.590598 [debug] [Thread-2 (]: On model.open_data_air_traffic.stg_opensky_flights: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_opensky_flights"} */
+drop view if exists "analytics"."main"."stg_opensky_flights__dbt_backup" cascade
+[0m15:29:03.595113 [debug] [Thread-2 (]: SQL status: OK in 0.003 seconds
+[0m15:29:03.597633 [debug] [Thread-2 (]: On model.open_data_air_traffic.stg_opensky_flights: Close
+[0m15:29:03.617186 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ca6c8b43-d8bd-4d51-a0eb-6db1811a6d1d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B66241FA0>]}
+[0m15:29:03.619187 [info ] [Thread-2 (]: 2 of 7 OK created sql view model main.stg_opensky_flights ...................... [[32mOK[0m in 0.26s]
+[0m15:29:03.621189 [debug] [Thread-2 (]: Finished running node model.open_data_air_traffic.stg_opensky_flights
+[0m15:29:03.627226 [debug] [Thread-4 (]: Began running node model.open_data_air_traffic.int_flights_with_weather
+[0m15:29:03.628226 [info ] [Thread-4 (]: 4 of 7 SKIP relation main.int_flights_with_weather ............................. [[33mSKIP[0m]
+[0m15:29:03.630228 [debug] [Thread-4 (]: Finished running node model.open_data_air_traffic.int_flights_with_weather
+[0m15:29:03.632735 [debug] [Thread-3 (]: Began running node model.open_data_air_traffic.mart_flight_features
+[0m15:29:03.633744 [debug] [Thread-2 (]: Began running node model.open_data_air_traffic.qa_daily_completeness
+[0m15:29:03.634742 [debug] [Thread-1 (]: Began running node model.open_data_air_traffic.qa_join_coverage
+[0m15:29:03.634742 [info ] [Thread-3 (]: 5 of 7 SKIP relation main.mart_flight_features ................................. [[33mSKIP[0m]
+[0m15:29:03.636250 [info ] [Thread-2 (]: 6 of 7 SKIP relation main.qa_daily_completeness ................................ [[33mSKIP[0m]
+[0m15:29:03.638262 [debug] [Thread-3 (]: Finished running node model.open_data_air_traffic.mart_flight_features
+[0m15:29:03.637260 [info ] [Thread-1 (]: 7 of 7 SKIP relation main.qa_join_coverage ..................................... [[33mSKIP[0m]
+[0m15:29:03.640260 [debug] [Thread-2 (]: Finished running node model.open_data_air_traffic.qa_daily_completeness
+[0m15:29:03.641261 [debug] [Thread-1 (]: Finished running node model.open_data_air_traffic.qa_join_coverage
+[0m15:29:03.647297 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:29:03.648302 [debug] [MainThread]: On master: BEGIN
+[0m15:29:03.649297 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:29:03.662382 [debug] [MainThread]: SQL status: OK in 0.013 seconds
+[0m15:29:03.663390 [debug] [MainThread]: On master: COMMIT
+[0m15:29:03.664390 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:29:03.665396 [debug] [MainThread]: On master: COMMIT
+[0m15:29:03.665903 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m15:29:03.667912 [debug] [MainThread]: On master: Close
+[0m15:29:03.670912 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:29:03.670912 [debug] [MainThread]: Connection 'create_analytics_main' was properly closed.
+[0m15:29:03.672421 [debug] [MainThread]: Connection 'list_analytics_main' was properly closed.
+[0m15:29:03.673430 [debug] [MainThread]: Connection 'model.open_data_air_traffic.stg_airports' was properly closed.
+[0m15:29:03.674430 [debug] [MainThread]: Connection 'model.open_data_air_traffic.stg_opensky_flights' was properly closed.
+[0m15:29:03.675428 [debug] [MainThread]: Connection 'model.open_data_air_traffic.stg_weather_hourly' was properly closed.
+[0m15:29:03.676428 [info ] [MainThread]: 
+[0m15:29:03.677435 [info ] [MainThread]: Finished running 1 table model, 6 view models in 0 hours 0 minutes and 0.69 seconds (0.69s).
+[0m15:29:03.679436 [debug] [MainThread]: Command end result
+[0m15:29:03.727531 [debug] [MainThread]: Wrote artifact WritableManifest to H:\Bureau\Pro\Ecole\Open Data\dbt\target\manifest.json
+[0m15:29:03.732041 [debug] [MainThread]: Wrote artifact SemanticManifest to H:\Bureau\Pro\Ecole\Open Data\dbt\target\semantic_manifest.json
+[0m15:29:03.740566 [debug] [MainThread]: Wrote artifact RunExecutionResult to H:\Bureau\Pro\Ecole\Open Data\dbt\target\run_results.json
+[0m15:29:03.742072 [info ] [MainThread]: 
+[0m15:29:03.743081 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m15:29:03.744082 [info ] [MainThread]: 
+[0m15:29:03.745077 [error] [MainThread]: [31mFailure in model stg_weather_hourly (models\staging\stg_weather_hourly.sql)[0m
+[0m15:29:03.746582 [error] [MainThread]:   Runtime Error in model stg_weather_hourly (models\staging\stg_weather_hourly.sql)
+  Binder Error: UNNEST requires a single list as input
+[0m15:29:03.746582 [info ] [MainThread]: 
+[0m15:29:03.747588 [info ] [MainThread]:   compiled code at target\compiled\open_data_air_traffic\models\staging\stg_weather_hourly.sql
+[0m15:29:03.748590 [info ] [MainThread]: 
+[0m15:29:03.749592 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=4 NO-OP=0 TOTAL=7
+[0m15:29:03.752096 [debug] [MainThread]: Command `dbt run` failed at 15:29:03.750589 after 3.02 seconds
+[0m15:29:03.752096 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B64B3A690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B640B1100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B640B0D70>]}
+[0m15:29:03.753103 [debug] [MainThread]: Flushing usage events
+[0m15:29:04.122782 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:29:09.390503 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF1AD44350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF1D3BCB60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF1D3BE810>]}
+
+
+============================== 15:29:09.398546 | 6a9bea0c-9b32-438b-b450-926f45629c03 ==============================
+[0m15:29:09.398546 [info ] [MainThread]: Running with dbt=1.11.2
+[0m15:29:09.400544 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'H:\\Bureau\\Pro\\Ecole\\Open Data\\dbt', 'use_colors': 'True', 'invocation_command': 'dbt seed', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'H:\\Bureau\\Pro\\Ecole\\Open Data\\dbt\\logs'}
+[0m15:29:09.734822 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6a9bea0c-9b32-438b-b450-926f45629c03', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF1F5256A0>]}
+[0m15:29:09.830441 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6a9bea0c-9b32-438b-b450-926f45629c03', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF1DD6FB00>]}
+[0m15:29:09.834960 [info ] [MainThread]: Registered adapter: duckdb=1.8.3
+[0m15:29:10.305121 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m15:29:10.496394 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:29:10.497392 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m15:29:10.497392 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:29:10.566338 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6a9bea0c-9b32-438b-b450-926f45629c03', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF1F4EA180>]}
+[0m15:29:10.680538 [debug] [MainThread]: Wrote artifact WritableManifest to H:\Bureau\Pro\Ecole\Open Data\dbt\target\manifest.json
+[0m15:29:10.685056 [debug] [MainThread]: Wrote artifact SemanticManifest to H:\Bureau\Pro\Ecole\Open Data\dbt\target\semantic_manifest.json
+[0m15:29:10.713764 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6a9bea0c-9b32-438b-b450-926f45629c03', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF1F9AB590>]}
+[0m15:29:10.713764 [info ] [MainThread]: Found 7 models, 1 seed, 5 data tests, 455 macros
+[0m15:29:10.714765 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6a9bea0c-9b32-438b-b450-926f45629c03', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF1F911A00>]}
+[0m15:29:10.718278 [info ] [MainThread]: 
+[0m15:29:10.719279 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:29:10.719279 [info ] [MainThread]: 
+[0m15:29:10.720280 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m15:29:10.721279 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_analytics'
+[0m15:29:10.850246 [debug] [ThreadPool]: Using duckdb connection "list_analytics"
+[0m15:29:10.851250 [debug] [ThreadPool]: On list_analytics: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "connection_name": "list_analytics"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where catalog_name = '"analytics"'
+    
+  
+  
+[0m15:29:10.851250 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:29:10.864365 [debug] [ThreadPool]: SQL status: OK in 0.013 seconds
+[0m15:29:10.864868 [debug] [ThreadPool]: On list_analytics: Close
+[0m15:29:10.869382 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_analytics, now create_analytics_main)
+[0m15:29:10.870382 [debug] [ThreadPool]: Creating schema "database: "analytics"
+schema: "main"
+"
+[0m15:29:10.878401 [debug] [ThreadPool]: Using duckdb connection "create_analytics_main"
+[0m15:29:10.879399 [debug] [ThreadPool]: On create_analytics_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "connection_name": "create_analytics_main"} */
+
+    
+        select type from duckdb_databases()
+        where database_name='analytics'
+        and type='sqlite'
+    
+  
+[0m15:29:10.880401 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:29:10.889427 [debug] [ThreadPool]: SQL status: OK in 0.010 seconds
+[0m15:29:10.891427 [debug] [ThreadPool]: Using duckdb connection "create_analytics_main"
+[0m15:29:10.892426 [debug] [ThreadPool]: On create_analytics_main: BEGIN
+[0m15:29:10.892932 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:29:10.892932 [debug] [ThreadPool]: Using duckdb connection "create_analytics_main"
+[0m15:29:10.893936 [debug] [ThreadPool]: On create_analytics_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "connection_name": "create_analytics_main"} */
+
+    
+    
+        create schema if not exists "analytics"."main"
+    
+[0m15:29:10.894935 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:29:10.896442 [debug] [ThreadPool]: On create_analytics_main: COMMIT
+[0m15:29:10.897450 [debug] [ThreadPool]: Using duckdb connection "create_analytics_main"
+[0m15:29:10.897450 [debug] [ThreadPool]: On create_analytics_main: COMMIT
+[0m15:29:10.898449 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:29:10.899448 [debug] [ThreadPool]: On create_analytics_main: Close
+[0m15:29:10.909473 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_analytics_main'
+[0m15:29:10.917262 [debug] [ThreadPool]: Using duckdb connection "list_analytics_main"
+[0m15:29:10.917262 [debug] [ThreadPool]: On list_analytics_main: BEGIN
+[0m15:29:10.918261 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:29:10.927280 [debug] [ThreadPool]: SQL status: OK in 0.009 seconds
+[0m15:29:10.928280 [debug] [ThreadPool]: Using duckdb connection "list_analytics_main"
+[0m15:29:10.928280 [debug] [ThreadPool]: On list_analytics_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "connection_name": "list_analytics_main"} */
+select
+      'analytics' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'main'
+    and table_catalog = 'analytics'
+  
+[0m15:29:10.965595 [debug] [ThreadPool]: SQL status: OK in 0.037 seconds
+[0m15:29:10.973144 [debug] [ThreadPool]: On list_analytics_main: ROLLBACK
+[0m15:29:10.975145 [debug] [ThreadPool]: Failed to rollback 'list_analytics_main'
+[0m15:29:10.976145 [debug] [ThreadPool]: On list_analytics_main: Close
+[0m15:29:10.982145 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6a9bea0c-9b32-438b-b450-926f45629c03', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF1F5B52B0>]}
+[0m15:29:10.982145 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:29:10.983276 [debug] [MainThread]: On master: BEGIN
+[0m15:29:10.983276 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:29:10.992297 [debug] [MainThread]: SQL status: OK in 0.009 seconds
+[0m15:29:10.993380 [debug] [MainThread]: On master: COMMIT
+[0m15:29:10.994384 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:29:10.995384 [debug] [MainThread]: On master: COMMIT
+[0m15:29:10.995384 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m15:29:10.996381 [debug] [MainThread]: On master: Close
+[0m15:29:11.002382 [debug] [Thread-1 (]: Began running node seed.open_data_air_traffic.holidays_eu
+[0m15:29:11.003500 [info ] [Thread-1 (]: 1 of 1 START seed file main.holidays_eu ........................................ [RUN]
+[0m15:29:11.004497 [debug] [Thread-1 (]: Acquiring new duckdb connection 'seed.open_data_air_traffic.holidays_eu'
+[0m15:29:11.005500 [debug] [Thread-1 (]: Began compiling node seed.open_data_air_traffic.holidays_eu
+[0m15:29:11.006507 [debug] [Thread-1 (]: Began executing node seed.open_data_air_traffic.holidays_eu
+[0m15:29:11.046372 [debug] [Thread-1 (]: Using duckdb connection "seed.open_data_air_traffic.holidays_eu"
+[0m15:29:11.047382 [debug] [Thread-1 (]: On seed.open_data_air_traffic.holidays_eu: BEGIN
+[0m15:29:11.047382 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:29:11.056414 [debug] [Thread-1 (]: SQL status: OK in 0.009 seconds
+[0m15:29:11.057414 [debug] [Thread-1 (]: Using duckdb connection "seed.open_data_air_traffic.holidays_eu"
+[0m15:29:11.058413 [debug] [Thread-1 (]: On seed.open_data_air_traffic.holidays_eu: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "seed.open_data_air_traffic.holidays_eu"} */
+truncate table "analytics"."main"."holidays_eu"
+[0m15:29:11.059411 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:29:11.074456 [debug] [Thread-1 (]: Using duckdb connection "seed.open_data_air_traffic.holidays_eu"
+[0m15:29:11.075456 [debug] [Thread-1 (]: On seed.open_data_air_traffic.holidays_eu: 
+          COPY "analytics"."main"."holidays_eu" FROM 'H:\Bureau\Pro\Ecole\Open Data\dbt\seeds\holidays_eu.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m15:29:11.078455 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:29:11.087528 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.open_data_air_traffic.holidays_eu"
+[0m15:29:11.110606 [debug] [Thread-1 (]: On seed.open_data_air_traffic.holidays_eu: COMMIT
+[0m15:29:11.112113 [debug] [Thread-1 (]: Using duckdb connection "seed.open_data_air_traffic.holidays_eu"
+[0m15:29:11.113159 [debug] [Thread-1 (]: On seed.open_data_air_traffic.holidays_eu: COMMIT
+[0m15:29:11.120151 [debug] [Thread-1 (]: SQL status: OK in 0.007 seconds
+[0m15:29:11.123337 [debug] [Thread-1 (]: On seed.open_data_air_traffic.holidays_eu: Close
+[0m15:29:11.142127 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6a9bea0c-9b32-438b-b450-926f45629c03', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF1AE44950>]}
+[0m15:29:11.143136 [info ] [Thread-1 (]: 1 of 1 OK loaded seed file main.holidays_eu .................................... [[32mINSERT 1[0m in 0.14s]
+[0m15:29:11.144135 [debug] [Thread-1 (]: Finished running node seed.open_data_air_traffic.holidays_eu
+[0m15:29:11.146136 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:29:11.147137 [debug] [MainThread]: On master: BEGIN
+[0m15:29:11.147137 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:29:11.157160 [debug] [MainThread]: SQL status: OK in 0.009 seconds
+[0m15:29:11.157160 [debug] [MainThread]: On master: COMMIT
+[0m15:29:11.158160 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:29:11.158160 [debug] [MainThread]: On master: COMMIT
+[0m15:29:11.159159 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m15:29:11.160159 [debug] [MainThread]: On master: Close
+[0m15:29:11.162163 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:29:11.163293 [debug] [MainThread]: Connection 'create_analytics_main' was properly closed.
+[0m15:29:11.164289 [debug] [MainThread]: Connection 'list_analytics_main' was properly closed.
+[0m15:29:11.164289 [debug] [MainThread]: Connection 'seed.open_data_air_traffic.holidays_eu' was properly closed.
+[0m15:29:11.165458 [info ] [MainThread]: 
+[0m15:29:11.166457 [info ] [MainThread]: Finished running 1 seed in 0 hours 0 minutes and 0.45 seconds (0.45s).
+[0m15:29:11.167457 [debug] [MainThread]: Command end result
+[0m15:29:11.200649 [debug] [MainThread]: Wrote artifact WritableManifest to H:\Bureau\Pro\Ecole\Open Data\dbt\target\manifest.json
+[0m15:29:11.205162 [debug] [MainThread]: Wrote artifact SemanticManifest to H:\Bureau\Pro\Ecole\Open Data\dbt\target\semantic_manifest.json
+[0m15:29:11.213331 [debug] [MainThread]: Wrote artifact RunExecutionResult to H:\Bureau\Pro\Ecole\Open Data\dbt\target\run_results.json
+[0m15:29:11.214333 [info ] [MainThread]: 
+[0m15:29:11.215331 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:29:11.216337 [info ] [MainThread]: 
+[0m15:29:11.217334 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m15:29:11.219332 [debug] [MainThread]: Command `dbt seed` succeeded at 15:29:11.219332 after 2.00 seconds
+[0m15:29:11.219332 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF1AD44350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF1D6885C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EF1CFBFB60>]}
+[0m15:29:11.220332 [debug] [MainThread]: Flushing usage events
+[0m15:29:11.582245 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:29:16.225097 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017B94F77EF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017B947CFFE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017B947CDFA0>]}
+
+
+============================== 15:29:16.232118 | c018ee9a-9ca6-480c-a356-303db03f7be2 ==============================
+[0m15:29:16.232118 [info ] [MainThread]: Running with dbt=1.11.2
+[0m15:29:16.234124 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'H:\\Bureau\\Pro\\Ecole\\Open Data\\dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'log_path': 'H:\\Bureau\\Pro\\Ecole\\Open Data\\dbt\\logs'}
+[0m15:29:16.553657 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c018ee9a-9ca6-480c-a356-303db03f7be2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017B960BCA10>]}
+[0m15:29:16.650239 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c018ee9a-9ca6-480c-a356-303db03f7be2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017B9432F500>]}
+[0m15:29:16.653266 [info ] [MainThread]: Registered adapter: duckdb=1.8.3
+[0m15:29:17.156167 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m15:29:17.377453 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:29:17.377453 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m15:29:17.378451 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:29:17.457490 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c018ee9a-9ca6-480c-a356-303db03f7be2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017B96785010>]}
+[0m15:29:17.584681 [debug] [MainThread]: Wrote artifact WritableManifest to H:\Bureau\Pro\Ecole\Open Data\dbt\target\manifest.json
+[0m15:29:17.589192 [debug] [MainThread]: Wrote artifact SemanticManifest to H:\Bureau\Pro\Ecole\Open Data\dbt\target\semantic_manifest.json
+[0m15:29:17.622300 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c018ee9a-9ca6-480c-a356-303db03f7be2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017B96A1A630>]}
+[0m15:29:17.622300 [info ] [MainThread]: Found 7 models, 1 seed, 5 data tests, 455 macros
+[0m15:29:17.624412 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c018ee9a-9ca6-480c-a356-303db03f7be2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017B96784BF0>]}
+[0m15:29:17.627417 [info ] [MainThread]: 
+[0m15:29:17.628416 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:29:17.629416 [info ] [MainThread]: 
+[0m15:29:17.630415 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m15:29:17.639234 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_analytics'
+[0m15:29:17.774160 [debug] [ThreadPool]: Using duckdb connection "list_analytics"
+[0m15:29:17.775160 [debug] [ThreadPool]: On list_analytics: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "connection_name": "list_analytics"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where catalog_name = '"analytics"'
+    
+  
+  
+[0m15:29:17.776161 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:29:17.789550 [debug] [ThreadPool]: SQL status: OK in 0.014 seconds
+[0m15:29:17.790548 [debug] [ThreadPool]: On list_analytics: Close
+[0m15:29:17.795064 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_analytics, now create_analytics_main)
+[0m15:29:17.796570 [debug] [ThreadPool]: Creating schema "database: "analytics"
+schema: "main"
+"
+[0m15:29:17.807600 [debug] [ThreadPool]: Using duckdb connection "create_analytics_main"
+[0m15:29:17.808599 [debug] [ThreadPool]: On create_analytics_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "connection_name": "create_analytics_main"} */
+
+    
+        select type from duckdb_databases()
+        where database_name='analytics'
+        and type='sqlite'
+    
+  
+[0m15:29:17.809598 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:29:17.819631 [debug] [ThreadPool]: SQL status: OK in 0.010 seconds
+[0m15:29:17.822142 [debug] [ThreadPool]: Using duckdb connection "create_analytics_main"
+[0m15:29:17.823149 [debug] [ThreadPool]: On create_analytics_main: BEGIN
+[0m15:29:17.824150 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:29:17.825158 [debug] [ThreadPool]: Using duckdb connection "create_analytics_main"
+[0m15:29:17.825158 [debug] [ThreadPool]: On create_analytics_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "connection_name": "create_analytics_main"} */
+
+    
+    
+        create schema if not exists "analytics"."main"
+    
+[0m15:29:17.826156 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:29:17.827653 [debug] [ThreadPool]: On create_analytics_main: COMMIT
+[0m15:29:17.828653 [debug] [ThreadPool]: Using duckdb connection "create_analytics_main"
+[0m15:29:17.829653 [debug] [ThreadPool]: On create_analytics_main: COMMIT
+[0m15:29:17.830652 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:29:17.830652 [debug] [ThreadPool]: On create_analytics_main: Close
+[0m15:29:17.836165 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_analytics_main'
+[0m15:29:17.844553 [debug] [ThreadPool]: Using duckdb connection "list_analytics_main"
+[0m15:29:17.844553 [debug] [ThreadPool]: On list_analytics_main: BEGIN
+[0m15:29:17.845554 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:29:17.856572 [debug] [ThreadPool]: SQL status: OK in 0.011 seconds
+[0m15:29:17.857579 [debug] [ThreadPool]: Using duckdb connection "list_analytics_main"
+[0m15:29:17.857579 [debug] [ThreadPool]: On list_analytics_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "connection_name": "list_analytics_main"} */
+select
+      'analytics' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'main'
+    and table_catalog = 'analytics'
+  
+[0m15:29:17.894743 [debug] [ThreadPool]: SQL status: OK in 0.036 seconds
+[0m15:29:17.902256 [debug] [ThreadPool]: On list_analytics_main: ROLLBACK
+[0m15:29:17.903767 [debug] [ThreadPool]: Failed to rollback 'list_analytics_main'
+[0m15:29:17.904772 [debug] [ThreadPool]: On list_analytics_main: Close
+[0m15:29:17.910283 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c018ee9a-9ca6-480c-a356-303db03f7be2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017B91EB0E90>]}
+[0m15:29:17.910283 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:29:17.911284 [debug] [MainThread]: On master: BEGIN
+[0m15:29:17.911284 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:29:17.920381 [debug] [MainThread]: SQL status: OK in 0.009 seconds
+[0m15:29:17.921380 [debug] [MainThread]: On master: COMMIT
+[0m15:29:17.922380 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:29:17.922380 [debug] [MainThread]: On master: COMMIT
+[0m15:29:17.922380 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m15:29:17.923841 [debug] [MainThread]: On master: Close
+[0m15:29:17.931356 [debug] [Thread-1 (]: Began running node model.open_data_air_traffic.stg_airports
+[0m15:29:17.932360 [debug] [Thread-2 (]: Began running node model.open_data_air_traffic.stg_opensky_flights
+[0m15:29:17.933480 [debug] [Thread-3 (]: Began running node model.open_data_air_traffic.stg_weather_hourly
+[0m15:29:17.934479 [info ] [Thread-1 (]: 1 of 7 START sql view model main.stg_airports .................................. [RUN]
+[0m15:29:17.935483 [info ] [Thread-2 (]: 2 of 7 START sql view model main.stg_opensky_flights ........................... [RUN]
+[0m15:29:17.936484 [info ] [Thread-3 (]: 3 of 7 START sql view model main.stg_weather_hourly ............................ [RUN]
+[0m15:29:17.937484 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.open_data_air_traffic.stg_airports'
+[0m15:29:17.937484 [debug] [Thread-2 (]: Acquiring new duckdb connection 'model.open_data_air_traffic.stg_opensky_flights'
+[0m15:29:17.938480 [debug] [Thread-3 (]: Acquiring new duckdb connection 'model.open_data_air_traffic.stg_weather_hourly'
+[0m15:29:17.939483 [debug] [Thread-1 (]: Began compiling node model.open_data_air_traffic.stg_airports
+[0m15:29:17.940483 [debug] [Thread-2 (]: Began compiling node model.open_data_air_traffic.stg_opensky_flights
+[0m15:29:17.940483 [debug] [Thread-3 (]: Began compiling node model.open_data_air_traffic.stg_weather_hourly
+[0m15:29:17.950507 [debug] [Thread-1 (]: Writing injected SQL for node "model.open_data_air_traffic.stg_airports"
+[0m15:29:17.955024 [debug] [Thread-2 (]: Writing injected SQL for node "model.open_data_air_traffic.stg_opensky_flights"
+[0m15:29:17.958540 [debug] [Thread-3 (]: Writing injected SQL for node "model.open_data_air_traffic.stg_weather_hourly"
+[0m15:29:17.960543 [debug] [Thread-1 (]: Began executing node model.open_data_air_traffic.stg_airports
+[0m15:29:17.984171 [debug] [Thread-2 (]: Began executing node model.open_data_air_traffic.stg_opensky_flights
+[0m15:29:18.013789 [debug] [Thread-1 (]: Writing runtime sql for node "model.open_data_air_traffic.stg_airports"
+[0m15:29:18.019302 [debug] [Thread-2 (]: Writing runtime sql for node "model.open_data_air_traffic.stg_opensky_flights"
+[0m15:29:18.020301 [debug] [Thread-3 (]: Began executing node model.open_data_air_traffic.stg_weather_hourly
+[0m15:29:18.025402 [debug] [Thread-3 (]: Writing runtime sql for node "model.open_data_air_traffic.stg_weather_hourly"
+[0m15:29:18.026405 [debug] [Thread-1 (]: Using duckdb connection "model.open_data_air_traffic.stg_airports"
+[0m15:29:18.027404 [debug] [Thread-2 (]: Using duckdb connection "model.open_data_air_traffic.stg_opensky_flights"
+[0m15:29:18.027404 [debug] [Thread-1 (]: On model.open_data_air_traffic.stg_airports: BEGIN
+[0m15:29:18.028402 [debug] [Thread-3 (]: Using duckdb connection "model.open_data_air_traffic.stg_weather_hourly"
+[0m15:29:18.029402 [debug] [Thread-2 (]: On model.open_data_air_traffic.stg_opensky_flights: BEGIN
+[0m15:29:18.029402 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:29:18.032402 [debug] [Thread-3 (]: On model.open_data_air_traffic.stg_weather_hourly: BEGIN
+[0m15:29:18.032402 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m15:29:18.042375 [debug] [Thread-1 (]: SQL status: OK in 0.012 seconds
+[0m15:29:18.042882 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m15:29:18.043886 [debug] [Thread-1 (]: Using duckdb connection "model.open_data_air_traffic.stg_airports"
+[0m15:29:18.044886 [debug] [Thread-2 (]: SQL status: OK in 0.012 seconds
+[0m15:29:18.044886 [debug] [Thread-3 (]: SQL status: OK in 0.003 seconds
+[0m15:29:18.046392 [debug] [Thread-1 (]: On model.open_data_air_traffic.stg_airports: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_airports"} */
+
+  
+  create view "analytics"."main"."stg_airports__dbt_tmp" as (
+    select
+    upper(icao) as icao,
+    latitude,
+    longitude,
+    coalesce(timezone, 'UTC') as timezone,
+    upper(country_code) as country_code
+from read_csv_auto('../data/reference/airports_eu.csv')
+  );
+
+[0m15:29:18.047401 [debug] [Thread-2 (]: Using duckdb connection "model.open_data_air_traffic.stg_opensky_flights"
+[0m15:29:18.048399 [debug] [Thread-3 (]: Using duckdb connection "model.open_data_air_traffic.stg_weather_hourly"
+[0m15:29:18.049400 [debug] [Thread-2 (]: On model.open_data_air_traffic.stg_opensky_flights: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_opensky_flights"} */
+
+  
+  create view "analytics"."main"."stg_opensky_flights__dbt_tmp" as (
+    with raw as (
+    select *
+    from read_json_auto(
+        '../data/raw/opensky/*/*.jsonl',
+        union_by_name=true
+    )
+)
+
+select
+    icao24,
+    trim(callsign) as callsign,
+    estDepartureAirport as est_departure_airport,
+    estArrivalAirport as est_arrival_airport,
+    firstSeen as first_seen,
+    lastSeen as last_seen,
+    estDepartureAirportHorizDistance as est_departure_airport_horiz_distance,
+    estDepartureAirportVertDistance as est_departure_airport_vert_distance,
+    estArrivalAirportHorizDistance as est_arrival_airport_horiz_distance,
+    estArrivalAirportVertDistance as est_arrival_airport_vert_distance,
+    departureAirportCandidatesCount as departure_airport_candidates_count,
+    arrivalAirportCandidatesCount as arrival_airport_candidates_count,
+    flight_type,
+    airport_icao,
+    to_timestamp(firstSeen) as first_seen_ts_utc,
+    to_timestamp(lastSeen) as last_seen_ts_utc,
+    date_trunc('hour', to_timestamp(firstSeen)) as first_seen_hour_utc,
+    date_trunc('hour', to_timestamp(lastSeen)) as last_seen_hour_utc
+from raw
+  );
+
+[0m15:29:18.050399 [debug] [Thread-3 (]: On model.open_data_air_traffic.stg_weather_hourly: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_weather_hourly"} */
+
+  
+  create view "analytics"."main"."stg_weather_hourly__dbt_tmp" as (
+    with raw as (
+    select *
+    from read_json_auto(
+        '../data/raw/weather/*/*.json',
+        union_by_name=true
+    )
+),
+expanded as (
+    select
+        airport_icao,
+        timezone,
+        hourly.time as time_list,
+        hourly.temperature_2m as temperature_2m_list,
+        hourly.precipitation as precipitation_list,
+        hourly.wind_speed_10m as wind_speed_10m_list,
+        hourly.cloud_cover as cloud_cover_list
+    from raw
+)
+
+select
+    airport_icao,
+    coalesce(timezone, 'UTC') as timezone,
+    t.time_local as time_local,
+    strptime(t.time_local, '%Y-%m-%dT%H:%M') as time_utc,
+    t.temperature_2m as temperature_2m,
+    t.precipitation as precipitation,
+    t.wind_speed_10m as wind_speed_10m,
+    t.cloud_cover as cloud_cover
+from expanded,
+    unnest(
+        time_list,
+        temperature_2m_list,
+        precipitation_list,
+        wind_speed_10m_list,
+        cloud_cover_list
+    ) as t(time_local, temperature_2m, precipitation, wind_speed_10m, cloud_cover)
+  );
+
+[0m15:29:18.052400 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m15:29:18.062432 [debug] [Thread-1 (]: Using duckdb connection "model.open_data_air_traffic.stg_airports"
+[0m15:29:18.062432 [debug] [Thread-1 (]: On model.open_data_air_traffic.stg_airports: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_airports"} */
+alter view "analytics"."main"."stg_airports" rename to "stg_airports__dbt_backup"
+[0m15:29:18.064481 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:29:18.069514 [debug] [Thread-1 (]: Using duckdb connection "model.open_data_air_traffic.stg_airports"
+[0m15:29:18.069514 [debug] [Thread-1 (]: On model.open_data_air_traffic.stg_airports: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_airports"} */
+alter view "analytics"."main"."stg_airports__dbt_tmp" rename to "stg_airports"
+[0m15:29:18.071512 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:29:18.096611 [debug] [Thread-1 (]: On model.open_data_air_traffic.stg_airports: COMMIT
+[0m15:29:18.097622 [debug] [Thread-1 (]: Using duckdb connection "model.open_data_air_traffic.stg_airports"
+[0m15:29:18.097622 [debug] [Thread-3 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_weather_hourly"} */
+
+  
+  create view "analytics"."main"."stg_weather_hourly__dbt_tmp" as (
+    with raw as (
+    select *
+    from read_json_auto(
+        '../data/raw/weather/*/*.json',
+        union_by_name=true
+    )
+),
+expanded as (
+    select
+        airport_icao,
+        timezone,
+        hourly.time as time_list,
+        hourly.temperature_2m as temperature_2m_list,
+        hourly.precipitation as precipitation_list,
+        hourly.wind_speed_10m as wind_speed_10m_list,
+        hourly.cloud_cover as cloud_cover_list
+    from raw
+)
+
+select
+    airport_icao,
+    coalesce(timezone, 'UTC') as timezone,
+    t.time_local as time_local,
+    strptime(t.time_local, '%Y-%m-%dT%H:%M') as time_utc,
+    t.temperature_2m as temperature_2m,
+    t.precipitation as precipitation,
+    t.wind_speed_10m as wind_speed_10m,
+    t.cloud_cover as cloud_cover
+from expanded,
+    unnest(
+        time_list,
+        temperature_2m_list,
+        precipitation_list,
+        wind_speed_10m_list,
+        cloud_cover_list
+    ) as t(time_local, temperature_2m, precipitation, wind_speed_10m, cloud_cover)
+  );
+
+[0m15:29:18.098620 [debug] [Thread-1 (]: On model.open_data_air_traffic.stg_airports: COMMIT
+[0m15:29:18.099622 [debug] [Thread-3 (]: DuckDB adapter: Rolling back transaction.
+[0m15:29:18.100621 [debug] [Thread-3 (]: On model.open_data_air_traffic.stg_weather_hourly: ROLLBACK
+[0m15:29:18.104138 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m15:29:18.112136 [debug] [Thread-1 (]: Using duckdb connection "model.open_data_air_traffic.stg_airports"
+[0m15:29:18.112136 [debug] [Thread-1 (]: On model.open_data_air_traffic.stg_airports: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_airports"} */
+drop view if exists "analytics"."main"."stg_airports__dbt_backup" cascade
+[0m15:29:18.116431 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m15:29:18.118431 [debug] [Thread-3 (]: Failed to rollback 'model.open_data_air_traffic.stg_weather_hourly'
+[0m15:29:18.121436 [debug] [Thread-1 (]: On model.open_data_air_traffic.stg_airports: Close
+[0m15:29:18.122436 [debug] [Thread-3 (]: On model.open_data_air_traffic.stg_weather_hourly: Close
+[0m15:29:18.127351 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c018ee9a-9ca6-480c-a356-303db03f7be2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017B91DD8620>]}
+[0m15:29:18.128350 [info ] [Thread-1 (]: 1 of 7 OK created sql view model main.stg_airports ............................. [[32mOK[0m in 0.19s]
+[0m15:29:18.129350 [debug] [Thread-1 (]: Finished running node model.open_data_air_traffic.stg_airports
+[0m15:29:18.131350 [debug] [Thread-3 (]: Runtime Error in model stg_weather_hourly (models\staging\stg_weather_hourly.sql)
+  Binder Error: UNNEST requires a single list as input
+[0m15:29:18.132350 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c018ee9a-9ca6-480c-a356-303db03f7be2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017B96D9FBC0>]}
+[0m15:29:18.133791 [error] [Thread-3 (]: 3 of 7 ERROR creating sql view model main.stg_weather_hourly ................... [[31mERROR[0m in 0.19s]
+[0m15:29:18.134790 [debug] [Thread-3 (]: Finished running node model.open_data_air_traffic.stg_weather_hourly
+[0m15:29:18.136297 [debug] [Thread-7 (]: Marking all children of 'model.open_data_air_traffic.stg_weather_hourly' to be skipped because of status 'error'.  Reason: Runtime Error in model stg_weather_hourly (models\staging\stg_weather_hourly.sql)
+  Binder Error: UNNEST requires a single list as input.
+[0m15:29:18.137305 [debug] [Thread-2 (]: SQL status: OK in 0.086 seconds
+[0m15:29:18.142305 [debug] [Thread-2 (]: Using duckdb connection "model.open_data_air_traffic.stg_opensky_flights"
+[0m15:29:18.143411 [debug] [Thread-2 (]: On model.open_data_air_traffic.stg_opensky_flights: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_opensky_flights"} */
+alter view "analytics"."main"."stg_opensky_flights" rename to "stg_opensky_flights__dbt_backup"
+[0m15:29:18.144412 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m15:29:18.148421 [debug] [Thread-2 (]: Using duckdb connection "model.open_data_air_traffic.stg_opensky_flights"
+[0m15:29:18.149422 [debug] [Thread-2 (]: On model.open_data_air_traffic.stg_opensky_flights: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_opensky_flights"} */
+alter view "analytics"."main"."stg_opensky_flights__dbt_tmp" rename to "stg_opensky_flights"
+[0m15:29:18.150419 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m15:29:18.153496 [debug] [Thread-2 (]: On model.open_data_air_traffic.stg_opensky_flights: COMMIT
+[0m15:29:18.154495 [debug] [Thread-2 (]: Using duckdb connection "model.open_data_air_traffic.stg_opensky_flights"
+[0m15:29:18.155496 [debug] [Thread-2 (]: On model.open_data_air_traffic.stg_opensky_flights: COMMIT
+[0m15:29:18.158492 [debug] [Thread-2 (]: SQL status: OK in 0.003 seconds
+[0m15:29:18.161495 [debug] [Thread-2 (]: Using duckdb connection "model.open_data_air_traffic.stg_opensky_flights"
+[0m15:29:18.163001 [debug] [Thread-2 (]: On model.open_data_air_traffic.stg_opensky_flights: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_opensky_flights"} */
+drop view if exists "analytics"."main"."stg_opensky_flights__dbt_backup" cascade
+[0m15:29:18.166515 [debug] [Thread-2 (]: SQL status: OK in 0.003 seconds
+[0m15:29:18.168522 [debug] [Thread-2 (]: On model.open_data_air_traffic.stg_opensky_flights: Close
+[0m15:29:18.181468 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c018ee9a-9ca6-480c-a356-303db03f7be2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017B96DC82F0>]}
+[0m15:29:18.182472 [info ] [Thread-2 (]: 2 of 7 OK created sql view model main.stg_opensky_flights ...................... [[32mOK[0m in 0.24s]
+[0m15:29:18.183543 [debug] [Thread-2 (]: Finished running node model.open_data_air_traffic.stg_opensky_flights
+[0m15:29:18.184546 [debug] [Thread-4 (]: Began running node model.open_data_air_traffic.int_flights_with_weather
+[0m15:29:18.186051 [info ] [Thread-4 (]: 4 of 7 SKIP relation main.int_flights_with_weather ............................. [[33mSKIP[0m]
+[0m15:29:18.187057 [debug] [Thread-4 (]: Finished running node model.open_data_air_traffic.int_flights_with_weather
+[0m15:29:18.188058 [debug] [Thread-3 (]: Began running node model.open_data_air_traffic.mart_flight_features
+[0m15:29:18.188058 [debug] [Thread-2 (]: Began running node model.open_data_air_traffic.qa_daily_completeness
+[0m15:29:18.189057 [debug] [Thread-1 (]: Began running node model.open_data_air_traffic.qa_join_coverage
+[0m15:29:18.190059 [info ] [Thread-3 (]: 5 of 7 SKIP relation main.mart_flight_features ................................. [[33mSKIP[0m]
+[0m15:29:18.191057 [info ] [Thread-2 (]: 6 of 7 SKIP relation main.qa_daily_completeness ................................ [[33mSKIP[0m]
+[0m15:29:18.192061 [info ] [Thread-1 (]: 7 of 7 SKIP relation main.qa_join_coverage ..................................... [[33mSKIP[0m]
+[0m15:29:18.193166 [debug] [Thread-3 (]: Finished running node model.open_data_air_traffic.mart_flight_features
+[0m15:29:18.193166 [debug] [Thread-2 (]: Finished running node model.open_data_air_traffic.qa_daily_completeness
+[0m15:29:18.194164 [debug] [Thread-1 (]: Finished running node model.open_data_air_traffic.qa_join_coverage
+[0m15:29:18.196164 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:29:18.197169 [debug] [MainThread]: On master: BEGIN
+[0m15:29:18.198165 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:29:18.209198 [debug] [MainThread]: SQL status: OK in 0.011 seconds
+[0m15:29:18.210196 [debug] [MainThread]: On master: COMMIT
+[0m15:29:18.211198 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:29:18.211198 [debug] [MainThread]: On master: COMMIT
+[0m15:29:18.212196 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m15:29:18.213365 [debug] [MainThread]: On master: Close
+[0m15:29:18.216371 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:29:18.217374 [debug] [MainThread]: Connection 'create_analytics_main' was properly closed.
+[0m15:29:18.218378 [debug] [MainThread]: Connection 'list_analytics_main' was properly closed.
+[0m15:29:18.219374 [debug] [MainThread]: Connection 'model.open_data_air_traffic.stg_airports' was properly closed.
+[0m15:29:18.220375 [debug] [MainThread]: Connection 'model.open_data_air_traffic.stg_opensky_flights' was properly closed.
+[0m15:29:18.220375 [debug] [MainThread]: Connection 'model.open_data_air_traffic.stg_weather_hourly' was properly closed.
+[0m15:29:18.221371 [info ] [MainThread]: 
+[0m15:29:18.222369 [info ] [MainThread]: Finished running 1 table model, 6 view models in 0 hours 0 minutes and 0.59 seconds (0.59s).
+[0m15:29:18.224632 [debug] [MainThread]: Command end result
+[0m15:29:18.266269 [debug] [MainThread]: Wrote artifact WritableManifest to H:\Bureau\Pro\Ecole\Open Data\dbt\target\manifest.json
+[0m15:29:18.269788 [debug] [MainThread]: Wrote artifact SemanticManifest to H:\Bureau\Pro\Ecole\Open Data\dbt\target\semantic_manifest.json
+[0m15:29:18.278301 [debug] [MainThread]: Wrote artifact RunExecutionResult to H:\Bureau\Pro\Ecole\Open Data\dbt\target\run_results.json
+[0m15:29:18.279301 [info ] [MainThread]: 
+[0m15:29:18.280301 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m15:29:18.281302 [info ] [MainThread]: 
+[0m15:29:18.282806 [error] [MainThread]: [31mFailure in model stg_weather_hourly (models\staging\stg_weather_hourly.sql)[0m
+[0m15:29:18.283812 [error] [MainThread]:   Runtime Error in model stg_weather_hourly (models\staging\stg_weather_hourly.sql)
+  Binder Error: UNNEST requires a single list as input
+[0m15:29:18.283812 [info ] [MainThread]: 
+[0m15:29:18.284813 [info ] [MainThread]:   compiled code at target\compiled\open_data_air_traffic\models\staging\stg_weather_hourly.sql
+[0m15:29:18.286325 [info ] [MainThread]: 
+[0m15:29:18.287340 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=4 NO-OP=0 TOTAL=7
+[0m15:29:18.289334 [debug] [MainThread]: Command `dbt run` failed at 15:29:18.289334 after 2.22 seconds
+[0m15:29:18.290332 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017B9603CAA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017B947CDFA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017B969C2DB0>]}
+[0m15:29:18.290332 [debug] [MainThread]: Flushing usage events
+[0m15:29:18.634821 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:29:51.112507 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA916D6180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA93D2D8E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA93D2CFE0>]}
+
+
+============================== 15:29:51.119357 | 5d75e52d-d5e7-4850-a7cd-124da1cfd2c7 ==============================
+[0m15:29:51.119357 [info ] [MainThread]: Running with dbt=1.11.2
+[0m15:29:51.121353 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'H:\\Bureau\\Pro\\Ecole\\Open Data\\dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'log_path': 'H:\\Bureau\\Pro\\Ecole\\Open Data\\dbt\\logs'}
+[0m15:29:51.451197 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5d75e52d-d5e7-4850-a7cd-124da1cfd2c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA954A0080>]}
+[0m15:29:51.547277 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5d75e52d-d5e7-4850-a7cd-124da1cfd2c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA9577BBC0>]}
+[0m15:29:51.550278 [info ] [MainThread]: Registered adapter: duckdb=1.8.3
+[0m15:29:52.006280 [debug] [MainThread]: checksum: 3d40d8bbe1bef07db1c24822f2dbfff8bc07f2a48ed4fe2658a40653aec0b54b, vars: {}, profile: , target: , version: 1.11.2
+[0m15:29:52.210146 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m15:29:52.211145 [debug] [MainThread]: Partial parsing: updated file: open_data_air_traffic://models\staging\stg_weather_hourly.sql
+[0m15:29:52.825347 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5d75e52d-d5e7-4850-a7cd-124da1cfd2c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA95EEF2C0>]}
+[0m15:29:52.934551 [debug] [MainThread]: Wrote artifact WritableManifest to H:\Bureau\Pro\Ecole\Open Data\dbt\target\manifest.json
+[0m15:29:52.938550 [debug] [MainThread]: Wrote artifact SemanticManifest to H:\Bureau\Pro\Ecole\Open Data\dbt\target\semantic_manifest.json
+[0m15:29:52.966617 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5d75e52d-d5e7-4850-a7cd-124da1cfd2c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA95FECE30>]}
+[0m15:29:52.966617 [info ] [MainThread]: Found 7 models, 1 seed, 5 data tests, 455 macros
+[0m15:29:52.967627 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5d75e52d-d5e7-4850-a7cd-124da1cfd2c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA95BE9130>]}
+[0m15:29:52.970625 [info ] [MainThread]: 
+[0m15:29:52.970625 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:29:52.972132 [info ] [MainThread]: 
+[0m15:29:52.973140 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m15:29:52.980659 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_analytics'
+[0m15:29:53.168593 [debug] [ThreadPool]: Using duckdb connection "list_analytics"
+[0m15:29:53.169594 [debug] [ThreadPool]: On list_analytics: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "connection_name": "list_analytics"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where catalog_name = '"analytics"'
+    
+  
+  
+[0m15:29:53.169594 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:29:53.183130 [debug] [ThreadPool]: SQL status: OK in 0.013 seconds
+[0m15:29:53.185131 [debug] [ThreadPool]: On list_analytics: Close
+[0m15:29:53.189646 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_analytics, now create_analytics_main)
+[0m15:29:53.190644 [debug] [ThreadPool]: Creating schema "database: "analytics"
+schema: "main"
+"
+[0m15:29:53.199155 [debug] [ThreadPool]: Using duckdb connection "create_analytics_main"
+[0m15:29:53.200154 [debug] [ThreadPool]: On create_analytics_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "connection_name": "create_analytics_main"} */
+
+    
+        select type from duckdb_databases()
+        where database_name='analytics'
+        and type='sqlite'
+    
+  
+[0m15:29:53.200154 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:29:53.210184 [debug] [ThreadPool]: SQL status: OK in 0.009 seconds
+[0m15:29:53.212182 [debug] [ThreadPool]: Using duckdb connection "create_analytics_main"
+[0m15:29:53.212182 [debug] [ThreadPool]: On create_analytics_main: BEGIN
+[0m15:29:53.213263 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:29:53.214264 [debug] [ThreadPool]: Using duckdb connection "create_analytics_main"
+[0m15:29:53.215265 [debug] [ThreadPool]: On create_analytics_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "connection_name": "create_analytics_main"} */
+
+    
+    
+        create schema if not exists "analytics"."main"
+    
+[0m15:29:53.216264 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:29:53.217264 [debug] [ThreadPool]: On create_analytics_main: COMMIT
+[0m15:29:53.218263 [debug] [ThreadPool]: Using duckdb connection "create_analytics_main"
+[0m15:29:53.219262 [debug] [ThreadPool]: On create_analytics_main: COMMIT
+[0m15:29:53.219262 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:29:53.220263 [debug] [ThreadPool]: On create_analytics_main: Close
+[0m15:29:53.224779 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_analytics_main'
+[0m15:29:53.231290 [debug] [ThreadPool]: Using duckdb connection "list_analytics_main"
+[0m15:29:53.232289 [debug] [ThreadPool]: On list_analytics_main: BEGIN
+[0m15:29:53.232795 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:29:53.242336 [debug] [ThreadPool]: SQL status: OK in 0.009 seconds
+[0m15:29:53.242336 [debug] [ThreadPool]: Using duckdb connection "list_analytics_main"
+[0m15:29:53.244362 [debug] [ThreadPool]: On list_analytics_main: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "connection_name": "list_analytics_main"} */
+select
+      'analytics' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'main'
+    and table_catalog = 'analytics'
+  
+[0m15:29:53.281442 [debug] [ThreadPool]: SQL status: OK in 0.036 seconds
+[0m15:29:53.288594 [debug] [ThreadPool]: On list_analytics_main: ROLLBACK
+[0m15:29:53.290595 [debug] [ThreadPool]: Failed to rollback 'list_analytics_main'
+[0m15:29:53.290595 [debug] [ThreadPool]: On list_analytics_main: Close
+[0m15:29:53.297620 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5d75e52d-d5e7-4850-a7cd-124da1cfd2c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA96027CE0>]}
+[0m15:29:53.297620 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:29:53.298621 [debug] [MainThread]: On master: BEGIN
+[0m15:29:53.299620 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:29:53.308642 [debug] [MainThread]: SQL status: OK in 0.009 seconds
+[0m15:29:53.308642 [debug] [MainThread]: On master: COMMIT
+[0m15:29:53.309641 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:29:53.310640 [debug] [MainThread]: On master: COMMIT
+[0m15:29:53.310640 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m15:29:53.310640 [debug] [MainThread]: On master: Close
+[0m15:29:53.318154 [debug] [Thread-1 (]: Began running node model.open_data_air_traffic.stg_airports
+[0m15:29:53.319155 [debug] [Thread-2 (]: Began running node model.open_data_air_traffic.stg_opensky_flights
+[0m15:29:53.319155 [debug] [Thread-3 (]: Began running node model.open_data_air_traffic.stg_weather_hourly
+[0m15:29:53.320154 [info ] [Thread-1 (]: 1 of 7 START sql view model main.stg_airports .................................. [RUN]
+[0m15:29:53.321156 [info ] [Thread-2 (]: 2 of 7 START sql view model main.stg_opensky_flights ........................... [RUN]
+[0m15:29:53.322153 [info ] [Thread-3 (]: 3 of 7 START sql view model main.stg_weather_hourly ............................ [RUN]
+[0m15:29:53.323218 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.open_data_air_traffic.stg_airports'
+[0m15:29:53.324229 [debug] [Thread-2 (]: Acquiring new duckdb connection 'model.open_data_air_traffic.stg_opensky_flights'
+[0m15:29:53.325220 [debug] [Thread-3 (]: Acquiring new duckdb connection 'model.open_data_air_traffic.stg_weather_hourly'
+[0m15:29:53.326222 [debug] [Thread-1 (]: Began compiling node model.open_data_air_traffic.stg_airports
+[0m15:29:53.326222 [debug] [Thread-2 (]: Began compiling node model.open_data_air_traffic.stg_opensky_flights
+[0m15:29:53.327220 [debug] [Thread-3 (]: Began compiling node model.open_data_air_traffic.stg_weather_hourly
+[0m15:29:53.336235 [debug] [Thread-1 (]: Writing injected SQL for node "model.open_data_air_traffic.stg_airports"
+[0m15:29:53.340242 [debug] [Thread-2 (]: Writing injected SQL for node "model.open_data_air_traffic.stg_opensky_flights"
+[0m15:29:53.344394 [debug] [Thread-3 (]: Writing injected SQL for node "model.open_data_air_traffic.stg_weather_hourly"
+[0m15:29:53.345904 [debug] [Thread-1 (]: Began executing node model.open_data_air_traffic.stg_airports
+[0m15:29:53.345904 [debug] [Thread-2 (]: Began executing node model.open_data_air_traffic.stg_opensky_flights
+[0m15:29:53.393065 [debug] [Thread-1 (]: Writing runtime sql for node "model.open_data_air_traffic.stg_airports"
+[0m15:29:53.393065 [debug] [Thread-3 (]: Began executing node model.open_data_air_traffic.stg_weather_hourly
+[0m15:29:53.398576 [debug] [Thread-2 (]: Writing runtime sql for node "model.open_data_air_traffic.stg_opensky_flights"
+[0m15:29:53.403088 [debug] [Thread-3 (]: Writing runtime sql for node "model.open_data_air_traffic.stg_weather_hourly"
+[0m15:29:53.404090 [debug] [Thread-1 (]: Using duckdb connection "model.open_data_air_traffic.stg_airports"
+[0m15:29:53.405091 [debug] [Thread-1 (]: On model.open_data_air_traffic.stg_airports: BEGIN
+[0m15:29:53.405091 [debug] [Thread-2 (]: Using duckdb connection "model.open_data_air_traffic.stg_opensky_flights"
+[0m15:29:53.406597 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:29:53.407602 [debug] [Thread-2 (]: On model.open_data_air_traffic.stg_opensky_flights: BEGIN
+[0m15:29:53.407602 [debug] [Thread-3 (]: Using duckdb connection "model.open_data_air_traffic.stg_weather_hourly"
+[0m15:29:53.416630 [debug] [Thread-1 (]: SQL status: OK in 0.010 seconds
+[0m15:29:53.417639 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m15:29:53.418637 [debug] [Thread-3 (]: On model.open_data_air_traffic.stg_weather_hourly: BEGIN
+[0m15:29:53.418637 [debug] [Thread-1 (]: Using duckdb connection "model.open_data_air_traffic.stg_airports"
+[0m15:29:53.419636 [debug] [Thread-2 (]: SQL status: OK in 0.002 seconds
+[0m15:29:53.420635 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m15:29:53.420635 [debug] [Thread-1 (]: On model.open_data_air_traffic.stg_airports: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_airports"} */
+
+  
+  create view "analytics"."main"."stg_airports__dbt_tmp" as (
+    select
+    upper(icao) as icao,
+    latitude,
+    longitude,
+    coalesce(timezone, 'UTC') as timezone,
+    upper(country_code) as country_code
+from read_csv_auto('../data/reference/airports_eu.csv')
+  );
+
+[0m15:29:53.420635 [debug] [Thread-2 (]: Using duckdb connection "model.open_data_air_traffic.stg_opensky_flights"
+[0m15:29:53.422140 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m15:29:53.423147 [debug] [Thread-2 (]: On model.open_data_air_traffic.stg_opensky_flights: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_opensky_flights"} */
+
+  
+  create view "analytics"."main"."stg_opensky_flights__dbt_tmp" as (
+    with raw as (
+    select *
+    from read_json_auto(
+        '../data/raw/opensky/*/*.jsonl',
+        union_by_name=true
+    )
+)
+
+select
+    icao24,
+    trim(callsign) as callsign,
+    estDepartureAirport as est_departure_airport,
+    estArrivalAirport as est_arrival_airport,
+    firstSeen as first_seen,
+    lastSeen as last_seen,
+    estDepartureAirportHorizDistance as est_departure_airport_horiz_distance,
+    estDepartureAirportVertDistance as est_departure_airport_vert_distance,
+    estArrivalAirportHorizDistance as est_arrival_airport_horiz_distance,
+    estArrivalAirportVertDistance as est_arrival_airport_vert_distance,
+    departureAirportCandidatesCount as departure_airport_candidates_count,
+    arrivalAirportCandidatesCount as arrival_airport_candidates_count,
+    flight_type,
+    airport_icao,
+    to_timestamp(firstSeen) as first_seen_ts_utc,
+    to_timestamp(lastSeen) as last_seen_ts_utc,
+    date_trunc('hour', to_timestamp(firstSeen)) as first_seen_hour_utc,
+    date_trunc('hour', to_timestamp(lastSeen)) as last_seen_hour_utc
+from raw
+  );
+
+[0m15:29:53.424151 [debug] [Thread-3 (]: Using duckdb connection "model.open_data_air_traffic.stg_weather_hourly"
+[0m15:29:53.425146 [debug] [Thread-3 (]: On model.open_data_air_traffic.stg_weather_hourly: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_weather_hourly"} */
+
+  
+  create view "analytics"."main"."stg_weather_hourly__dbt_tmp" as (
+    with raw as (
+    select *
+    from read_json_auto(
+        '../data/raw/weather/*/*.json',
+        union_by_name=true
+    )
+),
+expanded as (
+    select
+        airport_icao,
+        timezone,
+        hourly.time as time_list,
+        hourly.temperature_2m as temperature_2m_list,
+        hourly.precipitation as precipitation_list,
+        hourly.wind_speed_10m as wind_speed_10m_list,
+        hourly.cloud_cover as cloud_cover_list
+    from raw
+)
+
+select
+    airport_icao,
+    coalesce(timezone, 'UTC') as timezone,
+    struct_extract(z, 1) as time_local,
+    strptime(struct_extract(z, 1), '%Y-%m-%dT%H:%M') as time_utc,
+    struct_extract(z, 2) as temperature_2m,
+    struct_extract(z, 3) as precipitation,
+    struct_extract(z, 4) as wind_speed_10m,
+    struct_extract(z, 5) as cloud_cover
+from expanded,
+    unnest(
+        list_zip(
+            time_list,
+            temperature_2m_list,
+            precipitation_list,
+            wind_speed_10m_list,
+            cloud_cover_list
+        )
+    ) as t(z)
+  );
+
+[0m15:29:53.426147 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m15:29:53.436503 [debug] [Thread-1 (]: Using duckdb connection "model.open_data_air_traffic.stg_airports"
+[0m15:29:53.437502 [debug] [Thread-1 (]: On model.open_data_air_traffic.stg_airports: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_airports"} */
+alter view "analytics"."main"."stg_airports" rename to "stg_airports__dbt_backup"
+[0m15:29:53.438502 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:29:53.443233 [debug] [Thread-1 (]: Using duckdb connection "model.open_data_air_traffic.stg_airports"
+[0m15:29:53.444234 [debug] [Thread-1 (]: On model.open_data_air_traffic.stg_airports: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_airports"} */
+alter view "analytics"."main"."stg_airports__dbt_tmp" rename to "stg_airports"
+[0m15:29:53.445236 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:29:53.471049 [debug] [Thread-1 (]: On model.open_data_air_traffic.stg_airports: COMMIT
+[0m15:29:53.471049 [debug] [Thread-1 (]: Using duckdb connection "model.open_data_air_traffic.stg_airports"
+[0m15:29:53.472553 [debug] [Thread-1 (]: On model.open_data_air_traffic.stg_airports: COMMIT
+[0m15:29:53.476561 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m15:29:53.484072 [debug] [Thread-1 (]: Using duckdb connection "model.open_data_air_traffic.stg_airports"
+[0m15:29:53.485073 [debug] [Thread-1 (]: On model.open_data_air_traffic.stg_airports: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_airports"} */
+drop view if exists "analytics"."main"."stg_airports__dbt_backup" cascade
+[0m15:29:53.487586 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:29:53.490584 [debug] [Thread-1 (]: On model.open_data_air_traffic.stg_airports: Close
+[0m15:29:53.494098 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5d75e52d-d5e7-4850-a7cd-124da1cfd2c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA911E8620>]}
+[0m15:29:53.495097 [info ] [Thread-1 (]: 1 of 7 OK created sql view model main.stg_airports ............................. [[32mOK[0m in 0.17s]
+[0m15:29:53.496607 [debug] [Thread-1 (]: Finished running node model.open_data_air_traffic.stg_airports
+[0m15:29:53.508640 [debug] [Thread-2 (]: SQL status: OK in 0.084 seconds
+[0m15:29:53.514156 [debug] [Thread-2 (]: Using duckdb connection "model.open_data_air_traffic.stg_opensky_flights"
+[0m15:29:53.515158 [debug] [Thread-3 (]: SQL status: OK in 0.089 seconds
+[0m15:29:53.515158 [debug] [Thread-2 (]: On model.open_data_air_traffic.stg_opensky_flights: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_opensky_flights"} */
+alter view "analytics"."main"."stg_opensky_flights" rename to "stg_opensky_flights__dbt_backup"
+[0m15:29:53.519156 [debug] [Thread-3 (]: Using duckdb connection "model.open_data_air_traffic.stg_weather_hourly"
+[0m15:29:53.521159 [debug] [Thread-3 (]: On model.open_data_air_traffic.stg_weather_hourly: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_weather_hourly"} */
+alter view "analytics"."main"."stg_weather_hourly" rename to "stg_weather_hourly__dbt_backup"
+[0m15:29:53.521159 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m15:29:53.526176 [debug] [Thread-2 (]: Using duckdb connection "model.open_data_air_traffic.stg_opensky_flights"
+[0m15:29:53.527183 [debug] [Thread-3 (]: SQL status: OK in 0.004 seconds
+[0m15:29:53.527183 [debug] [Thread-2 (]: On model.open_data_air_traffic.stg_opensky_flights: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_opensky_flights"} */
+alter view "analytics"."main"."stg_opensky_flights__dbt_tmp" rename to "stg_opensky_flights"
+[0m15:29:53.532180 [debug] [Thread-3 (]: Using duckdb connection "model.open_data_air_traffic.stg_weather_hourly"
+[0m15:29:53.533208 [debug] [Thread-3 (]: On model.open_data_air_traffic.stg_weather_hourly: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_weather_hourly"} */
+alter view "analytics"."main"."stg_weather_hourly__dbt_tmp" rename to "stg_weather_hourly"
+[0m15:29:53.534209 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m15:29:53.537206 [debug] [Thread-2 (]: On model.open_data_air_traffic.stg_opensky_flights: COMMIT
+[0m15:29:53.537206 [debug] [Thread-3 (]: SQL status: OK in 0.003 seconds
+[0m15:29:53.538206 [debug] [Thread-2 (]: Using duckdb connection "model.open_data_air_traffic.stg_opensky_flights"
+[0m15:29:53.540711 [debug] [Thread-3 (]: On model.open_data_air_traffic.stg_weather_hourly: COMMIT
+[0m15:29:53.540711 [debug] [Thread-2 (]: On model.open_data_air_traffic.stg_opensky_flights: COMMIT
+[0m15:29:53.540711 [debug] [Thread-3 (]: Using duckdb connection "model.open_data_air_traffic.stg_weather_hourly"
+[0m15:29:53.543249 [debug] [Thread-3 (]: On model.open_data_air_traffic.stg_weather_hourly: COMMIT
+[0m15:29:53.545248 [debug] [Thread-2 (]: SQL status: OK in 0.003 seconds
+[0m15:29:53.548249 [debug] [Thread-2 (]: Using duckdb connection "model.open_data_air_traffic.stg_opensky_flights"
+[0m15:29:53.549249 [debug] [Thread-3 (]: SQL status: OK in 0.005 seconds
+[0m15:29:53.550249 [debug] [Thread-2 (]: On model.open_data_air_traffic.stg_opensky_flights: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_opensky_flights"} */
+drop view if exists "analytics"."main"."stg_opensky_flights__dbt_backup" cascade
+[0m15:29:53.552753 [debug] [Thread-3 (]: Using duckdb connection "model.open_data_air_traffic.stg_weather_hourly"
+[0m15:29:53.554759 [debug] [Thread-3 (]: On model.open_data_air_traffic.stg_weather_hourly: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.stg_weather_hourly"} */
+drop view if exists "analytics"."main"."stg_weather_hourly__dbt_backup" cascade
+[0m15:29:53.557274 [debug] [Thread-2 (]: SQL status: OK in 0.003 seconds
+[0m15:29:53.559273 [debug] [Thread-2 (]: On model.open_data_air_traffic.stg_opensky_flights: Close
+[0m15:29:53.560273 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5d75e52d-d5e7-4850-a7cd-124da1cfd2c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA973C6C30>]}
+[0m15:29:53.561272 [debug] [Thread-3 (]: SQL status: OK in 0.006 seconds
+[0m15:29:53.561272 [info ] [Thread-2 (]: 2 of 7 OK created sql view model main.stg_opensky_flights ...................... [[32mOK[0m in 0.24s]
+[0m15:29:53.564450 [debug] [Thread-3 (]: On model.open_data_air_traffic.stg_weather_hourly: Close
+[0m15:29:53.565447 [debug] [Thread-2 (]: Finished running node model.open_data_air_traffic.stg_opensky_flights
+[0m15:29:53.577475 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5d75e52d-d5e7-4850-a7cd-124da1cfd2c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA9544D2B0>]}
+[0m15:29:53.578475 [info ] [Thread-3 (]: 3 of 7 OK created sql view model main.stg_weather_hourly ....................... [[32mOK[0m in 0.25s]
+[0m15:29:53.580475 [debug] [Thread-3 (]: Finished running node model.open_data_air_traffic.stg_weather_hourly
+[0m15:29:53.580475 [debug] [Thread-4 (]: Began running node model.open_data_air_traffic.int_flights_with_weather
+[0m15:29:53.581474 [info ] [Thread-4 (]: 4 of 7 START sql view model main.int_flights_with_weather ...................... [RUN]
+[0m15:29:53.583522 [debug] [Thread-4 (]: Acquiring new duckdb connection 'model.open_data_air_traffic.int_flights_with_weather'
+[0m15:29:53.584522 [debug] [Thread-4 (]: Began compiling node model.open_data_air_traffic.int_flights_with_weather
+[0m15:29:53.589038 [debug] [Thread-4 (]: Writing injected SQL for node "model.open_data_air_traffic.int_flights_with_weather"
+[0m15:29:53.592040 [debug] [Thread-4 (]: Began executing node model.open_data_air_traffic.int_flights_with_weather
+[0m15:29:53.597491 [debug] [Thread-4 (]: Writing runtime sql for node "model.open_data_air_traffic.int_flights_with_weather"
+[0m15:29:53.599488 [debug] [Thread-4 (]: Using duckdb connection "model.open_data_air_traffic.int_flights_with_weather"
+[0m15:29:53.600488 [debug] [Thread-4 (]: On model.open_data_air_traffic.int_flights_with_weather: BEGIN
+[0m15:29:53.601486 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m15:29:53.611530 [debug] [Thread-4 (]: SQL status: OK in 0.010 seconds
+[0m15:29:53.612526 [debug] [Thread-4 (]: Using duckdb connection "model.open_data_air_traffic.int_flights_with_weather"
+[0m15:29:53.612526 [debug] [Thread-4 (]: On model.open_data_air_traffic.int_flights_with_weather: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.int_flights_with_weather"} */
+
+  
+  create view "analytics"."main"."int_flights_with_weather__dbt_tmp" as (
+    with flights as (
+    select *
+    from "analytics"."main"."stg_opensky_flights"
+),
+weather as (
+    select *
+    from "analytics"."main"."stg_weather_hourly"
+)
+
+select
+    f.*,
+    case
+        when f.flight_type = 'departure' then f.first_seen_hour_utc
+        else f.last_seen_hour_utc
+    end as event_hour_utc,
+    w.temperature_2m,
+    w.precipitation,
+    w.wind_speed_10m,
+    w.cloud_cover
+from flights f
+left join weather w
+    on w.airport_icao = f.airport_icao
+   and w.time_utc = case
+        when f.flight_type = 'departure' then f.first_seen_hour_utc
+        else f.last_seen_hour_utc
+    end
+  );
+
+[0m15:29:53.684712 [debug] [Thread-4 (]: SQL status: OK in 0.071 seconds
+[0m15:29:53.689227 [debug] [Thread-4 (]: Using duckdb connection "model.open_data_air_traffic.int_flights_with_weather"
+[0m15:29:53.690227 [debug] [Thread-4 (]: On model.open_data_air_traffic.int_flights_with_weather: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.int_flights_with_weather"} */
+alter view "analytics"."main"."int_flights_with_weather" rename to "int_flights_with_weather__dbt_backup"
+[0m15:29:53.691228 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m15:29:53.696244 [debug] [Thread-4 (]: Using duckdb connection "model.open_data_air_traffic.int_flights_with_weather"
+[0m15:29:53.697254 [debug] [Thread-4 (]: On model.open_data_air_traffic.int_flights_with_weather: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.int_flights_with_weather"} */
+alter view "analytics"."main"."int_flights_with_weather__dbt_tmp" rename to "int_flights_with_weather"
+[0m15:29:53.697254 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m15:29:53.699250 [debug] [Thread-4 (]: On model.open_data_air_traffic.int_flights_with_weather: COMMIT
+[0m15:29:53.700250 [debug] [Thread-4 (]: Using duckdb connection "model.open_data_air_traffic.int_flights_with_weather"
+[0m15:29:53.701252 [debug] [Thread-4 (]: On model.open_data_air_traffic.int_flights_with_weather: COMMIT
+[0m15:29:53.705868 [debug] [Thread-4 (]: SQL status: OK in 0.004 seconds
+[0m15:29:53.708875 [debug] [Thread-4 (]: Using duckdb connection "model.open_data_air_traffic.int_flights_with_weather"
+[0m15:29:53.709875 [debug] [Thread-4 (]: On model.open_data_air_traffic.int_flights_with_weather: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.int_flights_with_weather"} */
+drop view if exists "analytics"."main"."int_flights_with_weather__dbt_backup" cascade
+[0m15:29:53.713384 [debug] [Thread-4 (]: SQL status: OK in 0.003 seconds
+[0m15:29:53.716384 [debug] [Thread-4 (]: On model.open_data_air_traffic.int_flights_with_weather: Close
+[0m15:29:53.727488 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5d75e52d-d5e7-4850-a7cd-124da1cfd2c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA973C4350>]}
+[0m15:29:53.728488 [info ] [Thread-4 (]: 4 of 7 OK created sql view model main.int_flights_with_weather ................. [[32mOK[0m in 0.15s]
+[0m15:29:53.730488 [debug] [Thread-4 (]: Finished running node model.open_data_air_traffic.int_flights_with_weather
+[0m15:29:53.731487 [debug] [Thread-2 (]: Began running node model.open_data_air_traffic.mart_flight_features
+[0m15:29:53.731487 [debug] [Thread-3 (]: Began running node model.open_data_air_traffic.qa_daily_completeness
+[0m15:29:53.732490 [debug] [Thread-1 (]: Began running node model.open_data_air_traffic.qa_join_coverage
+[0m15:29:53.732490 [info ] [Thread-2 (]: 5 of 7 START sql table model main.mart_flight_features ......................... [RUN]
+[0m15:29:53.733983 [info ] [Thread-3 (]: 6 of 7 START sql view model main.qa_daily_completeness ......................... [RUN]
+[0m15:29:53.734982 [info ] [Thread-1 (]: 7 of 7 START sql view model main.qa_join_coverage .............................. [RUN]
+[0m15:29:53.736490 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.open_data_air_traffic.stg_opensky_flights, now model.open_data_air_traffic.mart_flight_features)
+[0m15:29:53.737504 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.open_data_air_traffic.stg_weather_hourly, now model.open_data_air_traffic.qa_daily_completeness)
+[0m15:29:53.737504 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.open_data_air_traffic.stg_airports, now model.open_data_air_traffic.qa_join_coverage)
+[0m15:29:53.738501 [debug] [Thread-2 (]: Began compiling node model.open_data_air_traffic.mart_flight_features
+[0m15:29:53.739498 [debug] [Thread-3 (]: Began compiling node model.open_data_air_traffic.qa_daily_completeness
+[0m15:29:53.739498 [debug] [Thread-1 (]: Began compiling node model.open_data_air_traffic.qa_join_coverage
+[0m15:29:53.746517 [debug] [Thread-2 (]: Writing injected SQL for node "model.open_data_air_traffic.mart_flight_features"
+[0m15:29:53.750517 [debug] [Thread-3 (]: Writing injected SQL for node "model.open_data_air_traffic.qa_daily_completeness"
+[0m15:29:53.754686 [debug] [Thread-1 (]: Writing injected SQL for node "model.open_data_air_traffic.qa_join_coverage"
+[0m15:29:53.757205 [debug] [Thread-2 (]: Began executing node model.open_data_air_traffic.mart_flight_features
+[0m15:29:53.758205 [debug] [Thread-3 (]: Began executing node model.open_data_air_traffic.qa_daily_completeness
+[0m15:29:53.787289 [debug] [Thread-2 (]: Writing runtime sql for node "model.open_data_air_traffic.mart_flight_features"
+[0m15:29:53.787289 [debug] [Thread-1 (]: Began executing node model.open_data_air_traffic.qa_join_coverage
+[0m15:29:53.792291 [debug] [Thread-3 (]: Writing runtime sql for node "model.open_data_air_traffic.qa_daily_completeness"
+[0m15:29:53.797321 [debug] [Thread-1 (]: Writing runtime sql for node "model.open_data_air_traffic.qa_join_coverage"
+[0m15:29:53.798319 [debug] [Thread-2 (]: Using duckdb connection "model.open_data_air_traffic.mart_flight_features"
+[0m15:29:53.799322 [debug] [Thread-2 (]: On model.open_data_air_traffic.mart_flight_features: BEGIN
+[0m15:29:53.800323 [debug] [Thread-3 (]: Using duckdb connection "model.open_data_air_traffic.qa_daily_completeness"
+[0m15:29:53.800323 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m15:29:53.801324 [debug] [Thread-1 (]: Using duckdb connection "model.open_data_air_traffic.qa_join_coverage"
+[0m15:29:53.802319 [debug] [Thread-3 (]: On model.open_data_air_traffic.qa_daily_completeness: BEGIN
+[0m15:29:53.811371 [debug] [Thread-1 (]: On model.open_data_air_traffic.qa_join_coverage: BEGIN
+[0m15:29:53.811371 [debug] [Thread-2 (]: SQL status: OK in 0.011 seconds
+[0m15:29:53.812371 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m15:29:53.813437 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:29:53.814435 [debug] [Thread-2 (]: Using duckdb connection "model.open_data_air_traffic.mart_flight_features"
+[0m15:29:53.815437 [debug] [Thread-3 (]: SQL status: OK in 0.003 seconds
+[0m15:29:53.816436 [debug] [Thread-2 (]: On model.open_data_air_traffic.mart_flight_features: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.mart_flight_features"} */
+
+  
+    
+    
+
+    create  table
+      "analytics"."main"."mart_flight_features__dbt_tmp"
+  
+    as (
+      with flights as (
+    select *
+    from "analytics"."main"."int_flights_with_weather"
+),
+airports as (
+    select *
+    from "analytics"."main"."stg_airports"
+),
+holidays as (
+    select
+        cast(date as date) as holiday_date,
+        upper(country_code) as country_code,
+        is_holiday
+    from "analytics"."main"."holidays_eu"
+)
+
+select
+    f.icao24,
+    f.callsign,
+    f.flight_type,
+    f.airport_icao,
+    f.est_departure_airport,
+    f.est_arrival_airport,
+    f.first_seen_ts_utc,
+    f.last_seen_ts_utc,
+    f.event_hour_utc,
+    date_diff('minute', f.first_seen_ts_utc, f.last_seen_ts_utc) as flight_duration_min,
+    extract('hour' from f.event_hour_utc) as hour_of_day_utc,
+    extract('dow' from f.event_hour_utc) as day_of_week_utc,
+    extract('month' from f.event_hour_utc) as month_utc,
+    extract('week' from f.event_hour_utc) as week_of_year_utc,
+    extract('doy' from f.event_hour_utc) as day_of_year_utc,
+    case when extract('dow' from f.event_hour_utc) in (0, 6) then true else false end as is_weekend_utc,
+    f.temperature_2m,
+    f.precipitation,
+    f.wind_speed_10m,
+    f.cloud_cover,
+    a.country_code as airport_country_code,
+    concat(f.est_departure_airport, '-', f.est_arrival_airport) as route_code,
+    coalesce(h.is_holiday, false) as is_holiday
+from flights f
+left join airports a
+    on a.icao = f.airport_icao
+left join holidays h
+    on h.country_code = a.country_code
+   and h.holiday_date = cast(f.event_hour_utc as date)
+    );
+  
+  
+[0m15:29:53.816436 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m15:29:53.817436 [debug] [Thread-3 (]: Using duckdb connection "model.open_data_air_traffic.qa_daily_completeness"
+[0m15:29:53.818438 [debug] [Thread-1 (]: Using duckdb connection "model.open_data_air_traffic.qa_join_coverage"
+[0m15:29:53.818438 [debug] [Thread-3 (]: On model.open_data_air_traffic.qa_daily_completeness: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.qa_daily_completeness"} */
+
+  
+  create view "analytics"."main"."qa_daily_completeness__dbt_tmp" as (
+    with flights as (
+    select
+        airport_icao,
+        date_trunc('day', event_hour_utc) as day_utc,
+        count(*) as flights_count
+    from "analytics"."main"."int_flights_with_weather"
+    group by 1, 2
+),
+weather as (
+    select
+        airport_icao,
+        date_trunc('day', time_utc) as day_utc,
+        count(*) as weather_hours_count
+    from "analytics"."main"."stg_weather_hourly"
+    group by 1, 2
+)
+
+select
+    coalesce(f.airport_icao, w.airport_icao) as airport_icao,
+    coalesce(f.day_utc, w.day_utc) as day_utc,
+    coalesce(f.flights_count, 0) as flights_count,
+    coalesce(w.weather_hours_count, 0) as weather_hours_count,
+    case
+        when coalesce(w.weather_hours_count, 0) >= 24 then 0
+        else 24 - coalesce(w.weather_hours_count, 0)
+    end as missing_weather_hours
+from flights f
+full join weather w
+    on f.airport_icao = w.airport_icao
+   and f.day_utc = w.day_utc
+  );
+
+[0m15:29:53.820437 [debug] [Thread-1 (]: On model.open_data_air_traffic.qa_join_coverage: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.qa_join_coverage"} */
+
+  
+  create view "analytics"."main"."qa_join_coverage__dbt_tmp" as (
+    with flights as (
+    select *
+    from "analytics"."main"."int_flights_with_weather"
+)
+
+select
+    date_trunc('day', event_hour_utc) as day_utc,
+    count(*) as flights_total,
+    count(*) filter (where temperature_2m is not null) as flights_with_weather,
+    round(
+        100.0 * count(*) filter (where temperature_2m is not null) / nullif(count(*), 0),
+        2
+    ) as pct_with_weather
+from flights
+group by 1
+  );
+
+[0m15:29:53.996121 [debug] [Thread-1 (]: SQL status: OK in 0.175 seconds
+[0m15:29:54.000130 [debug] [Thread-1 (]: Using duckdb connection "model.open_data_air_traffic.qa_join_coverage"
+[0m15:29:54.001128 [debug] [Thread-1 (]: On model.open_data_air_traffic.qa_join_coverage: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.qa_join_coverage"} */
+alter view "analytics"."main"."qa_join_coverage" rename to "qa_join_coverage__dbt_backup"
+[0m15:29:54.002128 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:29:54.007543 [debug] [Thread-1 (]: Using duckdb connection "model.open_data_air_traffic.qa_join_coverage"
+[0m15:29:54.007543 [debug] [Thread-1 (]: On model.open_data_air_traffic.qa_join_coverage: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.qa_join_coverage"} */
+alter view "analytics"."main"."qa_join_coverage__dbt_tmp" rename to "qa_join_coverage"
+[0m15:29:54.008543 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:29:54.012047 [debug] [Thread-1 (]: On model.open_data_air_traffic.qa_join_coverage: COMMIT
+[0m15:29:54.013055 [debug] [Thread-1 (]: Using duckdb connection "model.open_data_air_traffic.qa_join_coverage"
+[0m15:29:54.013055 [debug] [Thread-1 (]: On model.open_data_air_traffic.qa_join_coverage: COMMIT
+[0m15:29:54.017568 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m15:29:54.020571 [debug] [Thread-1 (]: Using duckdb connection "model.open_data_air_traffic.qa_join_coverage"
+[0m15:29:54.022077 [debug] [Thread-1 (]: On model.open_data_air_traffic.qa_join_coverage: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.qa_join_coverage"} */
+drop view if exists "analytics"."main"."qa_join_coverage__dbt_backup" cascade
+[0m15:29:54.025084 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:29:54.027600 [debug] [Thread-1 (]: On model.open_data_air_traffic.qa_join_coverage: Close
+[0m15:29:54.028602 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5d75e52d-d5e7-4850-a7cd-124da1cfd2c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA973FD7C0>]}
+[0m15:29:54.029601 [info ] [Thread-1 (]: 7 of 7 OK created sql view model main.qa_join_coverage ......................... [[32mOK[0m in 0.29s]
+[0m15:29:54.030599 [debug] [Thread-1 (]: Finished running node model.open_data_air_traffic.qa_join_coverage
+[0m15:29:54.092280 [debug] [Thread-2 (]: SQL status: OK in 0.274 seconds
+[0m15:29:54.096304 [debug] [Thread-2 (]: Using duckdb connection "model.open_data_air_traffic.mart_flight_features"
+[0m15:29:54.097313 [debug] [Thread-3 (]: SQL status: OK in 0.276 seconds
+[0m15:29:54.098312 [debug] [Thread-2 (]: On model.open_data_air_traffic.mart_flight_features: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.mart_flight_features"} */
+alter table "analytics"."main"."mart_flight_features" rename to "mart_flight_features__dbt_backup"
+[0m15:29:54.101310 [debug] [Thread-3 (]: Using duckdb connection "model.open_data_air_traffic.qa_daily_completeness"
+[0m15:29:54.102311 [debug] [Thread-3 (]: On model.open_data_air_traffic.qa_daily_completeness: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.qa_daily_completeness"} */
+alter view "analytics"."main"."qa_daily_completeness" rename to "qa_daily_completeness__dbt_backup"
+[0m15:29:54.103393 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m15:29:54.104396 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m15:29:54.108403 [debug] [Thread-2 (]: Using duckdb connection "model.open_data_air_traffic.mart_flight_features"
+[0m15:29:54.112401 [debug] [Thread-3 (]: Using duckdb connection "model.open_data_air_traffic.qa_daily_completeness"
+[0m15:29:54.112401 [debug] [Thread-2 (]: On model.open_data_air_traffic.mart_flight_features: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.mart_flight_features"} */
+alter table "analytics"."main"."mart_flight_features__dbt_tmp" rename to "mart_flight_features"
+[0m15:29:54.113542 [debug] [Thread-3 (]: On model.open_data_air_traffic.qa_daily_completeness: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.qa_daily_completeness"} */
+alter view "analytics"."main"."qa_daily_completeness__dbt_tmp" rename to "qa_daily_completeness"
+[0m15:29:54.114544 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m15:29:54.115546 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m15:29:54.122055 [debug] [Thread-2 (]: On model.open_data_air_traffic.mart_flight_features: COMMIT
+[0m15:29:54.124066 [debug] [Thread-3 (]: On model.open_data_air_traffic.qa_daily_completeness: COMMIT
+[0m15:29:54.125066 [debug] [Thread-2 (]: Using duckdb connection "model.open_data_air_traffic.mart_flight_features"
+[0m15:29:54.126573 [debug] [Thread-3 (]: Using duckdb connection "model.open_data_air_traffic.qa_daily_completeness"
+[0m15:29:54.126573 [debug] [Thread-2 (]: On model.open_data_air_traffic.mart_flight_features: COMMIT
+[0m15:29:54.127583 [debug] [Thread-3 (]: On model.open_data_air_traffic.qa_daily_completeness: COMMIT
+[0m15:29:54.132083 [debug] [Thread-2 (]: SQL status: OK in 0.004 seconds
+[0m15:29:54.138607 [debug] [Thread-2 (]: Using duckdb connection "model.open_data_air_traffic.mart_flight_features"
+[0m15:29:54.138607 [debug] [Thread-3 (]: SQL status: OK in 0.011 seconds
+[0m15:29:54.139607 [debug] [Thread-2 (]: On model.open_data_air_traffic.mart_flight_features: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.mart_flight_features"} */
+drop table if exists "analytics"."main"."mart_flight_features__dbt_backup" cascade
+[0m15:29:54.143129 [debug] [Thread-3 (]: Using duckdb connection "model.open_data_air_traffic.qa_daily_completeness"
+[0m15:29:54.145126 [debug] [Thread-3 (]: On model.open_data_air_traffic.qa_daily_completeness: /* {"app": "dbt", "dbt_version": "1.11.2", "profile_name": "open_data_air_traffic", "target_name": "dev", "node_id": "model.open_data_air_traffic.qa_daily_completeness"} */
+drop view if exists "analytics"."main"."qa_daily_completeness__dbt_backup" cascade
+[0m15:29:54.147640 [debug] [Thread-2 (]: SQL status: OK in 0.003 seconds
+[0m15:29:54.149639 [debug] [Thread-2 (]: On model.open_data_air_traffic.mart_flight_features: Close
+[0m15:29:54.150640 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5d75e52d-d5e7-4850-a7cd-124da1cfd2c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA973C6CC0>]}
+[0m15:29:54.150640 [debug] [Thread-3 (]: SQL status: OK in 0.006 seconds
+[0m15:29:54.152147 [info ] [Thread-2 (]: 5 of 7 OK created sql table model main.mart_flight_features .................... [[32mOK[0m in 0.41s]
+[0m15:29:54.155152 [debug] [Thread-3 (]: On model.open_data_air_traffic.qa_daily_completeness: Close
+[0m15:29:54.156152 [debug] [Thread-2 (]: Finished running node model.open_data_air_traffic.mart_flight_features
+[0m15:29:54.186275 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5d75e52d-d5e7-4850-a7cd-124da1cfd2c7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA973C54F0>]}
+[0m15:29:54.187282 [info ] [Thread-3 (]: 6 of 7 OK created sql view model main.qa_daily_completeness .................... [[32mOK[0m in 0.45s]
+[0m15:29:54.189283 [debug] [Thread-3 (]: Finished running node model.open_data_air_traffic.qa_daily_completeness
+[0m15:29:54.190281 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:29:54.191282 [debug] [MainThread]: On master: BEGIN
+[0m15:29:54.192281 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:29:54.202312 [debug] [MainThread]: SQL status: OK in 0.010 seconds
+[0m15:29:54.203469 [debug] [MainThread]: On master: COMMIT
+[0m15:29:54.204471 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:29:54.204471 [debug] [MainThread]: On master: COMMIT
+[0m15:29:54.205474 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m15:29:54.206472 [debug] [MainThread]: On master: Close
+[0m15:29:54.209470 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:29:54.209470 [debug] [MainThread]: Connection 'create_analytics_main' was properly closed.
+[0m15:29:54.210469 [debug] [MainThread]: Connection 'list_analytics_main' was properly closed.
+[0m15:29:54.211472 [debug] [MainThread]: Connection 'model.open_data_air_traffic.qa_join_coverage' was properly closed.
+[0m15:29:54.211472 [debug] [MainThread]: Connection 'model.open_data_air_traffic.mart_flight_features' was properly closed.
+[0m15:29:54.212470 [debug] [MainThread]: Connection 'model.open_data_air_traffic.qa_daily_completeness' was properly closed.
+[0m15:29:54.212470 [debug] [MainThread]: Connection 'model.open_data_air_traffic.int_flights_with_weather' was properly closed.
+[0m15:29:54.214641 [info ] [MainThread]: 
+[0m15:29:54.214641 [info ] [MainThread]: Finished running 1 table model, 6 view models in 0 hours 0 minutes and 1.24 seconds (1.24s).
+[0m15:29:54.218158 [debug] [MainThread]: Command end result
+[0m15:29:54.252119 [debug] [MainThread]: Wrote artifact WritableManifest to H:\Bureau\Pro\Ecole\Open Data\dbt\target\manifest.json
+[0m15:29:54.255126 [debug] [MainThread]: Wrote artifact SemanticManifest to H:\Bureau\Pro\Ecole\Open Data\dbt\target\semantic_manifest.json
+[0m15:29:54.265159 [debug] [MainThread]: Wrote artifact RunExecutionResult to H:\Bureau\Pro\Ecole\Open Data\dbt\target\run_results.json
+[0m15:29:54.266159 [info ] [MainThread]: 
+[0m15:29:54.266159 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:29:54.267156 [info ] [MainThread]: 
+[0m15:29:54.268154 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=7
+[0m15:29:54.270155 [debug] [MainThread]: Command `dbt run` succeeded at 15:29:54.270155 after 3.31 seconds
+[0m15:29:54.271156 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA9603A780>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA942BE8D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA942BFA40>]}
+[0m15:29:54.271156 [debug] [MainThread]: Flushing usage events
+[0m15:29:54.710518 [debug] [MainThread]: An error was encountered while trying to flush usage events

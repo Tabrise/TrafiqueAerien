@@ -20,10 +20,19 @@ expanded as (
 select
     airport_icao,
     coalesce(timezone, 'UTC') as timezone,
-    list_extract(time_list, i) as time_local,
-    strptime(list_extract(time_list, i), '%Y-%m-%dT%H:%M') as time_utc,
-    list_extract(temperature_2m_list, i) as temperature_2m,
-    list_extract(precipitation_list, i) as precipitation,
-    list_extract(wind_speed_10m_list, i) as wind_speed_10m,
-    list_extract(cloud_cover_list, i) as cloud_cover
-from expanded, range(0, list_count(time_list)) as t(i)
+    struct_extract(z, 1) as time_local,
+    strptime(struct_extract(z, 1), '%Y-%m-%dT%H:%M') as time_utc,
+    struct_extract(z, 2) as temperature_2m,
+    struct_extract(z, 3) as precipitation,
+    struct_extract(z, 4) as wind_speed_10m,
+    struct_extract(z, 5) as cloud_cover
+from expanded,
+    unnest(
+        list_zip(
+            time_list,
+            temperature_2m_list,
+            precipitation_list,
+            wind_speed_10m_list,
+            cloud_cover_list
+        )
+    ) as t(z)
