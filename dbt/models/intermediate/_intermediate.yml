@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: int_flights_with_weather
+    description: "Jointure vols OpenSky + meteo horaire."

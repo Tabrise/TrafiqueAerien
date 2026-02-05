@@ -1,0 +1,11 @@
+requests==2.32.3
+pandas==2.2.3
+pyyaml==6.0.2
+python-dotenv==1.0.1
+tenacity==9.0.0
+dbt-duckdb==1.8.3
+duckdb==1.0.0
+scikit-learn==1.5.2
+joblib==1.4.2
+fastapi==0.115.2
+uvicorn==0.30.6

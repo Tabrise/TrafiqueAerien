@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: mart_flight_features
+    description: "Features par vol pour le modele ML."

@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.python-version
+config.yaml
+data/raw/
+data/analytics.duckdb
+dbt/target/
+dbt/dbt_packages/
+ml/artifacts/
+venv/

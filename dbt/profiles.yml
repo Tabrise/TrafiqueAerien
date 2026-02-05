@@ -1,0 +1,7 @@
+open_data_air_traffic:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: ../data/analytics.duckdb
+      threads: 4

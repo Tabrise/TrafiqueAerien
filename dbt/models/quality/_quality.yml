@@ -1,0 +1,7 @@
+version: 2
+
+models:
+  - name: qa_daily_completeness
+    description: "Completude des donnees par aeroport/jour."
+  - name: qa_join_coverage
+    description: "Couverture de la jointure vols + meteo par jour."

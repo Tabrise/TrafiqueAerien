@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: stg_opensky_flights
+    description: "Vols OpenSky nettoyes et horodatages UTC."
+    columns:
+      - name: icao24
+        tests:
+          - not_null
+      - name: flight_type
+        tests:
+          - accepted_values:
+              arguments:
+                values: ["arrival", "departure"]
+  - name: stg_weather_hourly
+    description: "Meteo horaire Open-Meteo par aeroport (UTC)."
+    columns:
+      - name: airport_icao
+        tests:
+          - not_null
+      - name: time_utc
+        tests:
+          - not_null
+  - name: stg_airports
+    description: "Referentiel aeroport (ICAO, position, timezone, pays)."
+    columns:
+      - name: icao
+        tests:
+          - not_null

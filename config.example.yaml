@@ -1,0 +1,21 @@
+opensky:
+  username: "YOUR_OPENSKY_USERNAME"
+  password: "YOUR_OPENSKY_PASSWORD"
+  oauth:
+    client_id: "YOUR_CLIENT_ID"
+    client_secret: "YOUR_CLIENT_SECRET"
+
+storage:
+  raw_dir: "data/raw"
+  reference_dir: "data/reference"
+
+airports:
+  file: "data/reference/airports_eu.csv"
+
+weather:
+  provider: "open-meteo"
+  timezone_default: "UTC"
+
+run:
+  start_date: "2026-02-01"
+  end_date: "2026-02-01"
